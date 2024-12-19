@@ -1,0 +1,27 @@
+<h2>Registration</h2>
+
+{% if config.extra.registration_is_open %}
+  <a class="uk-button uk-button-primary uk-button-large" href="{{ config.extra.registration_link }}" target="_blank">
+    Register here
+  </a>
+  {% if config.extra.how_to_join_video %}
+    <a class="uk-button uk-button-secondary uk-button-large" href="{{ config.extra.how_to_join_video }}" target="_blank">
+      Video: How to join
+    </a>
+  {% endif %}
+{% endif %}
+
+{% if config.extra.registration_is_closed %}
+  <button class="uk-button uk-button-danger uk-button-large">
+    Registration is closed
+  </button>
+{% endif %}
+
+{% if not config.extra.registration_is_open and not config.extra.registration_is_closed %}
+  <button class="uk-button uk-button-primary uk-button-large">
+    Registration will open soon
+  </button>
+{% endif %}
+
+{% set portion = get_page(path="registration.md") %}
+{{ portion.content | safe }}

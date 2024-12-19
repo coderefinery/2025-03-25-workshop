@@ -1,0 +1,37 @@
+{% import "macros.html" as macros %}
+
+{% extends "base.html" %}
+
+{% block content %}
+  <div class="uk-margin-bottom" uk-grid>
+    <div class="uk-width-expand@m">
+      <h1>{{ config.title }}</h1>
+    </div>
+    <div class="uk-width-1-4@m">
+      <div class="uk-align-right">
+        {% include "logos.html" %}
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-card uk-card-secondary uk-card-hover uk-card-body uk-light uk-margin-large-bottom">
+    <div uk-grid>
+      <div class="uk-width-expand@m">
+        {% include "news.html" %}
+      </div>
+      <div class="uk-width-expand@m">
+        {% include "links.html" %}
+      </div>
+    </div>
+  </div>
+
+  <div uk-grid>
+    <div class="uk-width-1-2@m">
+      {% include "registration.html" %}
+      {% include "schedule.html" %}
+    </div>
+    <div class="uk-width-1-2@m">
+      {{ section.content | safe }}
+    </div>
+  </div>
+{% endblock content %}

@@ -1,0 +1,4 @@
+*~
+.*.sw?
+public/
+static/processed_images/

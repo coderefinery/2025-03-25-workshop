@@ -1,0 +1,53 @@
+{% macro timezone_offset(date, time) %}
+  <script>
+    var date = '{{ date }}';
+    var time = '{{ time }}';
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('Z'));
+  </script>
+{% endmacro timezone_offset %}
+
+{% macro local_date(date, time) %}
+  <script>
+    var date = '{{ date }}';
+    var time = '{{ time }}';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('ddd (MMM D)'));
+  </script>
+{% endmacro local_date %}
+
+{% macro local_time(date, time) %}
+  <script>
+    var date = '{{ date }}';
+    var time = '{{ time }}';
+    if (time.length < 5) {
+      time = '0' + time;
+    }
+    var ts = dayjs(date + 'T' + time + ':00Z').utc();
+    document.write(ts.local().format('HH:mm'));
+  </script>
+{% endmacro local_time %}
+
+{% macro toc(page) %}
+    {% if page.toc %}
+        <ul>
+        {% for h1 in page.toc %}
+            <li>
+                <a href="{{ h1.permalink | safe }}">{{ h1.title }}</a>
+                {% if h1.children %}
+                    <ul>
+                        {% for h2 in h1.children %}
+                            <li>
+                                <a href="{{ h2.permalink | safe }}">{{ h2.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro toc %}

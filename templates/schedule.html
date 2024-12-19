@@ -1,0 +1,65 @@
+<script>
+  dayjs.extend(window.dayjs_plugin_utc)
+</script>
+
+<h2>Schedule</h2>
+
+<div class="uk-alert-danger" uk-alert>
+  <a class="uk-alert-close" uk-close></a>
+  <p>
+    All times are displayed in the local timezone of your browser.
+    Detected timezone offset compared to UTC: {{ macros::timezone_offset(date='2023-03-20', time='09:00') }}
+  </p>
+</div>
+
+<div class="uk-alert-info" uk-alert>
+  <a class="uk-alert-close" uk-close></a>
+  <p>
+    <b>Breaks</b>: 10 minutes every hour, between xx:50 and xx:10, but it is
+    difficult for us to indicate exactly when.
+  </p>
+</div>
+
+<table class="uk-table uk-table-small uk-table-justify">
+  <tbody>
+    {% set data = load_data(path="content/schedule.yaml") %}
+    {% for day in data.schedule %}
+      <tr>
+        <td>
+        </td>
+        <td>
+          &nbsp;
+          <br>
+          <b>{{ day.title }}</b>
+        </td>
+      </tr>
+      {% for session in day.sessions %}
+        <tr>
+          <td class="uk-width-2-5">
+            {{ macros::local_date(date=day.date, time=session.ends) }},
+            {{ macros::local_time(date=day.date, time=session.starts) }}
+            -
+            {{ macros::local_time(date=day.date, time=session.ends) }}
+          </td>
+          <td class="uk-width-3-5">
+            {% if session.url %}
+              <a href="{{ session.url }}" target="_blank">{{ session.title }}</a>
+            {% else %}
+              {{ session.title }}
+            {% endif %}
+            {% if session.subtitle %}
+              <div class="uk-text-small">
+                {{ session.subtitle | markdown(inline=true) | safe }}
+              </div>
+            {% endif %}
+            {% if session.presenters %}
+              <div class="uk-text-small">
+                Presenters: {{ session.presenters | markdown(inline=true) | safe }}
+              </div>
+            {% endif %}
+          </td>
+        </tr>
+      {% endfor %}
+    {% endfor %}
+  </tbody>
+</table>
