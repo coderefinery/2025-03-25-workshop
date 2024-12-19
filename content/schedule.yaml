@@ -1,38 +1,15 @@
 ---
 # all times must be input in UTC, be careful about daylight saving
 schedule:
-  - title: "Installation help and on-boarding"
-    date: "2024-03-05"
+  - title: "Installation help"
+    date: "2025-03-24"
     sessions:
-      - starts: 9:30
-        ends: 10:30
-        title: On-boarding for team leaders (option 1)
-        url: https://coderefinery.github.io/manuals/team-leaders/
-      - starts: 11:00
-        ends: 12:00
-        title: On-boarding for team leaders (option 2)
-        url: https://coderefinery.github.io/manuals/team-leaders/
       - starts: 12:30
         ends: 14:00
-        title: Installation help for everybody (option 1)
-        url: https://coderefinery.github.io/installation/
-  - title: "Installation help and on-boarding (you don't need to attend all sessions, choose the one that is better for you)"
-    date: "2024-03-07"
-    sessions:
-      - starts: 9:30
-        ends: 10:30
-        title: On-boarding for team leaders (option 3)
-        url: https://coderefinery.github.io/manuals/team-leaders/
-      - starts: 11:00
-        ends: 12:00
-        title: On-boarding for team leaders (option 4)
-        url: https://coderefinery.github.io/manuals/team-leaders/
-      - starts: 12:30
-        ends: 14:00
-        title: Installation help for everybody (option 2)
+        title: Installation help for everybody
         url: https://coderefinery.github.io/installation/
   - title: "Day 1"
-    date: "2024-03-12"
+    date: "2025-03-25"
     sessions:
       - starts: 8:00
         ends: 8:20
@@ -52,7 +29,7 @@ schedule:
         presenters: TBA
         subtitle: "[Merging](https://coderefinery.github.io/git-intro/merging/)"
   - title: "Day 2"
-    date: "2024-03-13"
+    date: "2025-03-26"
     sessions:
       - starts: 8:00
         ends: 10:00
@@ -67,7 +44,7 @@ schedule:
         presenters: TBA
         subtitle: "[Sharing work](https://coderefinery.github.io/git-intro/sharing/)"
   - title: "Day 3"
-    date: "2024-03-14"
+    date: "2025-03-27"
     sessions:
       - starts: 8:00
         ends: 10:00
@@ -91,7 +68,7 @@ schedule:
           [Contributing to others](https://coderefinery.github.io/git-collaborative/forking-workflow/)
 
   - title: "Day 4"
-    date: "2024-03-19"
+    date: "2025-04-01"
     sessions:
       - starts: 8:00
         ends: 10:00
@@ -106,7 +83,7 @@ schedule:
         url: https://coderefinery.github.io/social-coding/
         presenters: TBA
   - title: "Day 5"
-    date: "2024-03-20"
+    date: "2025-04-02"
     sessions:
       - starts: 8:00
         ends: 10:00
@@ -120,7 +97,7 @@ schedule:
         url: https://coderefinery.github.io/jupyter/
         presenters: TBA
   - title: "Day 6"
-    date: "2024-03-21"
+    date: "2025-04-03"
     sessions:
       - starts: 8:00
         ends: 10:00
@@ -139,15 +116,3 @@ schedule:
         title: "Concluding remarks, general Q&A, and where to go from here"
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
         presenters: TBA
-  - title: "Optional: Bring your own code session"
-    date: "2024-03-26"
-    sessions:
-      - starts: 12:00
-        ends: 14:00
-        title: Bring your own code and discuss and ask; you can also join this session if you have not attended the workshop
-  - title: "Optional: Bring your own code session"
-    date: "2024-04-02"
-    sessions:
-      - starts: 11:00
-        ends: 13:00
-        title: Bring your own code and discuss and ask; you can also join this session if you have not attended the workshop
