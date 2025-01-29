@@ -4,13 +4,13 @@ schedule:
   - title: "Shell crash course and installation help"
     date: "2025-03-19"
     sessions:
-    - starts: 12:00
-      ends: 12:30
-      title: Shell crash course (optional)
-    - starts: 12:30
-      ends: 13:30
-      title: Installation help for everybody (option 1)
-      url: https://coderefinery.github.io/installation/
+      - starts: 12:00
+        ends: 12:30
+        title: Shell crash course (optional)
+      - starts: 12:30
+        ends: 13:30
+        title: Installation help for everybody (option 1)
+        url: https://coderefinery.github.io/installation/
     date: "2025-03-24"
     sessions:
       - starts: 12:30
