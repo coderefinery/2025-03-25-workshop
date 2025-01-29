@@ -1,12 +1,21 @@
 ---
 # all times must be input in UTC, be careful about daylight saving
 schedule:
-  - title: "Installation help"
+  - title: "Shell crash course and installation help"
+    date: "2025-03-19"
+    sessions:
+    - starts: 12:00
+      ends: 12:30
+      title: Shell crash course (optional)
+    - starts: 12:30
+      ends: 13:30
+      title: Installation help for everybody (option 1)
+      url: https://coderefinery.github.io/installation/
     date: "2025-03-24"
     sessions:
       - starts: 12:30
         ends: 14:00
-        title: Installation help for everybody
+        title: Installation help for everybody (option 2)
         url: https://coderefinery.github.io/installation/
   - title: "Day 1"
     date: "2025-03-25"
