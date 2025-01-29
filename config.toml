@@ -51,12 +51,12 @@ logos = [
 ]
 
 # adapt this
-registration_link = "https://example.org"
+registration_link = "https://indico.neic.no/e/coderefinery-march-2025"
 source_repo = "https://github.com/coderefinery/2025-03-25-workshop"
 how_to_join_video = "https://youtu.be/QUAZELOioUY"
 
 # uncomment as soon as registration opens
-# registration_is_open = true
+registration_is_open = true
 
 # uncomment as soon as registration closes
 # registration_is_closed = true
