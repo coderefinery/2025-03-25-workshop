@@ -7,7 +7,7 @@ schedule:
       - starts: 12:00
         ends: 12:30
         title: Shell crash course
-        subtile: "This is optional, but recommended to beginners in command line."
+        subtitle: "This is optional, but recommended to beginners in command line."
       - starts: 12:30
         ends: 13:30
         title: Installation help for everybody (option 1)
