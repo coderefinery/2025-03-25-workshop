@@ -6,17 +6,21 @@ schedule:
     sessions:
       - starts: 12:00
         ends: 12:30
-        title: Shell crash course (optional)
+        title: Shell crash course
+        subtile: "This is optional, but recommended to beginners in command line."
       - starts: 12:30
         ends: 13:30
         title: Installation help for everybody (option 1)
         url: https://coderefinery.github.io/installation/
+        subtitle: "Please attend if you need help with the installation instructions. Choose the option that works best for you."
+  - title: "Installation help
     date: "2025-03-24"
     sessions:
       - starts: 12:30
         ends: 14:00
         title: Installation help for everybody (option 2)
         url: https://coderefinery.github.io/installation/
+        subtitle: "Please attend if you need help with the installation instructions. Choose the option that works best for you."
   - title: "Day 1"
     date: "2025-03-25"
     sessions:
