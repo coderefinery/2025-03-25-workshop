@@ -40,7 +40,7 @@ You can arrange everything with your friends and colleagues:
 - Agree where to meet
 - Agree how to follow the workshop
 - Maybe have some communications channel for your team
-- We send all registrantered participants information about the workshop
+- We send all registered participants information about the workshop
 - We don't need to know the details, but let us know if you have a team (for reporting purposes)
 
 These teams can consist of learners only, or they can have one or more people 
@@ -82,7 +82,7 @@ We are very happy for anyone who wants to organize local public events
  to follow the workshop and provide own on-site support.
 If you want to support your local community,
  you can arrange your own local event. This can be on-site or online.
-You can choose to arange your own registration or do the registration via us.  
+You can choose to arrange your own registration or do the registration via us.  
 You and your potential team leaders will get onboarding from us (see schedule).
 
 
