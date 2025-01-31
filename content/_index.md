@@ -9,9 +9,9 @@ Do you wish your colleagues or friends would use these tools?
 Why not [attend as a team leader](@/join.md)?
 Gather some friends who want to learn the topics and follow the workshop together.
 You don't need to be an expert: if you have been through CodeRefinery once or have some familiarity
-with the topics, and you are confident to call an expert helper when needed,
+with the topics, and you are confident to use the notes to ask questions when needed,
 then you have all it takes to lead a team to success,
-or lead even more people and join as an organization (see below).
+or lead even more people and join with your own classroom (see below).
 
 
 ## Be a Q&A helper
@@ -19,16 +19,14 @@ or lead even more people and join as an organization (see below).
 Help us answer questions from the participants in the online Q&A document (collaborative notes).
 
 
-## Partners and local exercise groups
+## Local exercise groups
 
-Some partners offer local support, such as breakout rooms, to their local
-teams. You can [become a partner](https://coderefinery.org/about/partners/) to
-support your community!
+Some organizations offer local support (in-person or online). 
+If you want to "bring your own classroom", get in contact and we can onboard and support you.
 
 We collect here the exercise groups that we know:
-- [**Aalto University**](https://scicomp.aalto.fi/):
-  - Local in-person exercise session and local support.
-  - Possibility of [credit points](@/certificates.md) to those in Finland.
+- [**CSC - IT Center for Science**](https://csc.fi/):
+  - Local in-person exercise session and local support in Espoo, Finland.
 
 
 ## Instructors
@@ -38,11 +36,13 @@ We collect here the exercise groups that we know:
 
 ## Workshop organizers
 
-- ...
+- Diana Iusan
+- Enrico Glerean
 
 
 ## On-boarding
 
+- Samantha Wittke
 - ...
 
 
@@ -56,8 +56,11 @@ We collect here the exercise groups that we know:
 - ...
 
 
-## Local organizers
+## Local organizers and team leads
 
+- Aurélie Vancraeyenest
+- Anni Järvenpää
+- Samantha Wittke
 - ...
 
 
