@@ -13,16 +13,21 @@ with the topics, and you are confident to use the notes to ask questions when ne
 then you have all it takes to lead a team to success,
 or lead even more people and join with your own classroom (see below).
 
+If this sounds interesting to you, please register asap and choose team leader, 
+so that we can set up an onboarding call. 
+
 
 ## Be a Q&A helper
 
 Help us answer questions from the participants in the online Q&A document (collaborative notes).
 
+If this sounds interesting to you, please register asap, so that we can invite you to an onboarding session. 
+
 
 ## Local exercise groups
 
 Some organizations offer local support (in-person or online). 
-If you want to "bring your own classroom", get in contact and we can onboard and support you.
+If you want to "bring your own classroom", get in contact (support(at)coderefinery.org) and we can onboard and support you.
 
 We collect here the exercise groups that we know:
 - [**CSC - IT Center for Science**](https://csc.fi/):
