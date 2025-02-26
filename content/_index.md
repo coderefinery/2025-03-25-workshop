@@ -29,9 +29,12 @@ If this sounds interesting to you, please register asap, so that we can invite y
 Some organizations offer local support (in-person or online). 
 If you want to "bring your own classroom", get in contact (support(at)coderefinery.org) and we can onboard and support you.
 
+To join any of the below mentioned groups, please sign up to the CodeRefinery workshop with your organizational e-mail address (or mention in the free form field that you would like to join one of the local groups). We will soon reach out to share more information about the local groups. Please also let us know if you want your local group to be listed here. 
+
 We collect here the exercise groups that we know:
-- [**CSC - IT Center for Science**](https://csc.fi/):
-  - Local in-person exercise session and local support in Espoo, Finland.
+- [**CSC - IT Center for Science in Espoo, Finland**](https://csc.fi/):
+  - Local in-person exercise session and local support by CSC and Aalto university. Everyone welcome!
+- ...
 
 
 ## Instructors
