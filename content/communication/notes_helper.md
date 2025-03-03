@@ -24,7 +24,7 @@ How You Can Help
 - Your feedback is welcome! Please share any insights or suggestions in the Notes at the end of each day.
 
 We don’t have a dedicated onboarding session for Notes helpers. 
-You’re welcome to join our installation help sessions if you’d like to test things out or ask questions.
+You’re welcome to join our installation help sessions (see schedule: https://coderefinery.github.io/2025-03-25-workshop/#schedule) if you’d like to test things out or ask questions.
 
 Don’t worry if you can’t join every day or answer everything—every bit of help makes a difference! 
 We hope you enjoy the experience and maybe learn something new along the way.
