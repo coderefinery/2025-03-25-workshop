@@ -47,9 +47,17 @@ To install Zola, follow:
 Check that Zola is installed with `$ zola --version`.
 
 
+### Submodules
+
+In case git submodules are used, do not forget to initialize and install them:
+
+```
+git submodule init 
+```
+
 ### Local preview
 
 ```
 $ zola serve --open
 ```
-This will open in your default browser a rendered version of the template.
+
