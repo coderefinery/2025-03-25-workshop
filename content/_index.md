@@ -34,7 +34,8 @@ To join any of the below mentioned groups, please sign up to the CodeRefinery wo
 We collect here the exercise groups that we know:
 - [**CSC - IT Center for Science in Espoo, Finland**](https://csc.fi/):
   - Local in-person exercise session and local support by CSC and Aalto university. Everyone welcome!
-- ...
+- [**KIT - Karlsruher Institut für Technologie, Germany**](https://kit.edu/):
+  - Local in-person exercise sessions and support at the Scientific Computing Center (Campus South). Everyone welcome, too!
 
 
 ## Instructors
