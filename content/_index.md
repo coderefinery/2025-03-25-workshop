@@ -40,7 +40,18 @@ We collect here the exercise groups that we know:
 
 ## Instructors
 
-- ...
+- Radovan Bast
+- Richard Darst
+- Gregor Decristoforo
+- Enrico Glerean
+- Johan Hellsvik
+- Diana Iusan
+- Bjørn Lindi
+- Michele Mesiti
+- Dhanya Pushpadas
+- Jarno Rantaharju
+- Thomas Pfau
+- Samantha Wittke
 
 
 ## Workshop organizers
@@ -52,17 +63,17 @@ We collect here the exercise groups that we know:
 ## On-boarding
 
 - Samantha Wittke
-- ...
 
 
 ## Outreach
 
-- ...
-
+- Dhanya Pushpadas
+- Samantha Wittke
+- CodeRefinery Ambassadors
 
 ## Recording and broadcasting
 
-- ...
+- Richard Darst
 
 
 ## Local organizers and team leads
@@ -70,8 +81,8 @@ We collect here the exercise groups that we know:
 - Aurélie Vancraeyenest
 - Anni Järvenpää
 - Samantha Wittke
+- Michele Mesiti
 - ...
-
 
 ## Collaborative notes managers
 
