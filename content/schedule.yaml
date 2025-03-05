@@ -34,12 +34,12 @@ schedule:
         title: Introduction to version control with Git - part 1/4
         subtitle: "Why we want to track versions and how to go back in time to a working version: [Motivation](https://coderefinery.github.io/git-intro/motivation/), [Browsing](https://coderefinery.github.io/git-intro/browsing/), [Commiting](https://coderefinery.github.io/git-intro/commits/)"
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Diana Iusan, Gregor Decristoforo
       - starts: 11:00
         ends: 12:30
         title: Introduction to version control with Git - part 2/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Diana Iusan, Gregor Decristoforo
         subtitle: "[Merging](https://coderefinery.github.io/git-intro/merging/)"
   - title: "Day 2"
     date: "2025-03-26"
@@ -48,13 +48,13 @@ schedule:
         ends: 10:00
         title: Introduction to version control with Git - part 3/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Diana Iusan, Richard Darst
         subtitle: "[Day 2 intro](https://github.com/coderefinery/workshop-intro/blob/master/daily_intro.md), [Local work](https://coderefinery.github.io/git-intro/local-workflow/), [Inspecting history](https://coderefinery.github.io/git-intro/archaeology/)"
       - starts: 11:00
         ends: 12:30
         title: Introduction to version control with Git - part 4/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: TBA
+        presenters: Diana Iusan, Richard Darst
         subtitle: "[Sharing work](https://coderefinery.github.io/git-intro/sharing/)"
   - title: "Day 3"
     date: "2025-03-27"
@@ -63,7 +63,7 @@ schedule:
         ends: 10:00
         title: Collaborative distributed version control - part 1/2
         url: https://coderefinery.github.io/git-collaborative/
-        presenters: TBA
+        presenters: Dhanya Pushpadas, Radovan Bast
         subtitle: >-
           [Day 3
           intro](https://github.com/coderefinery/workshop-intro/blob/master/daily_intro.md#welcome-to-day-3-of-the-coderefinery-workshop),
@@ -76,7 +76,7 @@ schedule:
         ends: 12:30
         title: Collaborative distributed version control - part 2/2
         url: https://coderefinery.github.io/git-collaborative/
-        presenters: TBA
+        presenters: Dhanya Pushpadas, Radovan Bast
         subtitle: >-
           [Contributing to others](https://coderefinery.github.io/git-collaborative/forking-workflow/)
 
@@ -88,13 +88,13 @@ schedule:
         title: Reproducible research
         subtitle: Preparing code to be usable by you and others in the future
         url: https://coderefinery.github.io/reproducible-research/
-        presenters: TBA
+        presenters: Enrico Glerean, Samantha Wittke
       - starts: 10:00
         ends: 11:30
         title: Social coding and open software
         subtitle: What can you do to get credit for your code and to allow reuse
         url: https://coderefinery.github.io/social-coding/
-        presenters: TBA
+        presenters: Enrico Glerean, Samantha Wittke
   - title: "Day 5"
     date: "2025-04-02"
     sessions:
@@ -102,7 +102,7 @@ schedule:
         ends: 9:00
         title: How to document your research software
         url: https://coderefinery.github.io/documentation/
-        presenters: TBA
+        presenters: Michele Mesiti, Johan Hellsvik
       - starts: 10:00
         ends: 11:30
         title: Jupyter notebooks
@@ -117,13 +117,13 @@ schedule:
         title: Automated testing
         subtitle: Preventing yourself and others from breaking your functioning code
         url: https://coderefinery.github.io/testing/
-        presenters: TBA
+        presenters: Bjørn Lindi, Johan Hellsvik
       - starts: 10:00
         ends: 11:30
         title: Modular code development
         subtitle: Making reusing parts of your code easier
         url: https://coderefinery.github.io/modular-type-along/
-        presenters: TBA
+        presenters: Jarno Rantaharju, Thomas Pfau
       - starts: 11:30
         ends: 12:00
         title: "Concluding remarks, general Q&A, and where to go from here"
