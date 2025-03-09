@@ -47,17 +47,19 @@ To install Zola, follow:
 Check that Zola is installed with `$ zola --version`.
 
 
-### Submodules
-
-In case git submodules are used, do not forget to initialize and install them:
-
-```
-git submodule init 
-```
-
 ### Local preview
 
 ```
 $ zola serve --open
 ```
 
+This repository includes a Git submodule as for CSS styling. Make sure to clone with `--recursive` to also
+clone the submodule:
+```
+$ git clone --recursive ...
+```
+
+If you cloned without `--recursive`, you can initialize the submodule with:
+```
+$ git submodule init 
+```
