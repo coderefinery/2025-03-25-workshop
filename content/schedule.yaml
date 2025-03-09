@@ -129,3 +129,12 @@ schedule:
         title: "Concluding remarks, general Q&A, and where to go from here"
         url: https://github.com/coderefinery/workshop-outro/blob/master/README.md
         presenters: TBA
+  - title: "Optional: Bring your own code session"
+    date: "2025-04-16"
+    sessions:
+      - starts: 07:00
+        ends: 09:00
+        title: Bring your own code and discuss and ask
+        subtitle: |
+          You can also join this session if you have not attended the workshop
+          You can register for this session [here](https://link.webropolsurveys.com/EventParticipation/EventPublic/865f3893-0b41-4f1b-9cea-f0482a43018a).
