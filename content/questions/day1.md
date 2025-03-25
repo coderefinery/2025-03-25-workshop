@@ -446,6 +446,18 @@ This is a demo only
     - At CSC https://docs.csc.fi/computing/webinterface/vscode/
 
 
+## News for day 1 / preparation for day 2 (and 3)
+
+- Recordings will be available immediately at the URL
+  https://www.twitch.tv/coderefinery/videos when the streaming stops.
+- There will be more "local" work tomorrow, if you plan to do the exercises
+  please make sure you have a working git installation in your computer (e.g.
+  with VS Code or with the shell terminal, see instructions at
+  https://coderefinery.github.io/installation/).
+- Day 3 is when we will collaborate together and we will send you detailed
+  instructions on how to do that (
+
+
 ## Feedback
 
 Today was (vote for all that apply):
