@@ -13,11 +13,11 @@
 
     CodeRefinery: https://coderefinery.org/
 
-## This input will be used for all segments until redefined
-#- input: raw/day1-obs.mkv
-#- schedule-sync: 00:15:25=9:00:00
-#
-#
+# This input will be used for all segments until redefined
+- input: raw/day1-obs.mkv
+- schedule-sync: 00:17:24=9:00:00
+
+
 ### Preview icebreaker
 ##- output: out/day1-icebreaker.mkv
 ##  title: 1.1 Icebreaker
@@ -29,85 +29,73 @@
 ##    - end: 00:19:32
 #
 #
-## Intro
-#- output: out/day1-intro.mkv
-#  title: 1.1 Intro
-#  description: >
-#    The introduction to this workshop, explaining general mechanics
-#    and what CodeRefinery is.
-#
-#    https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
-#  time:
-#     - start: 00:15:25
-#     - stop: 00:39:15
-#
-## Git-intro day 1
-#- output: out/day1-git-intro-1.mkv
-#  title: 1.2 Git Intro (day 1)
-#  description: >
-#    Here, we go over the basics of git from first principles, using
-#    the GitHub web interface.  First, we talk about basic motivation
-#    about why version control.  Then, we use the GitHub web interface
-#    to understand the basics of history, branches, commits, and
-#    merges, conflict resolution (online), and how everything fits
-#    together.  This isn't how normal work would happen, but it's a
-#    much easier starting point.  Part 2 (on day 2) goes to local work
-#    using all the same concepts we learned today.
-#
-#    Multi-user work and remotes is the next lesson, git-collaborative,
-#    on day 3.
-#
-#    There are two external videos which are excluded from this
-#    recording.  You can find the link to them in the table of contents
-#    below.
-#
-#    https://coderefinery.github.io/git-intro/
-#
-#  time:
-#    - start: 00:39:15
-#    - -: Overview of the day
-#    - 00:45:00: '§ Motivation to version control'
-#    - 00:55:59: '§ Browsing an existing project'
-#    - 01:01:07: Exercise introduction (Browsing)
-#    - stop: 01:04:05
-#    - start: 01:23:24
-#    - -: Exercise follow-up (Browsing)
-#    - stop: 01:24:21
-#    - start: 01:34:30
-#    - -: Going through the exercise (Browsing)
-#    - 01:42:38: '§ Committing changes'
-#    - 01:47:26: Exercise introduction (Committing)
-#    - stop: 01:50:04
-#    - start: 02:08:21
-#    - -: Going over the exercise (Committing)
-#    - stop: 02:18:20
-#      # lunch
-#    - start: 03:13:35
-#    - -: Quick recap so far (and Q&A)
-#    - 03:15:29: '§ Merging changes'
-#    - 03:23:28: Demo of the exercise topcis (Merging)
-#    - 03:26:20: Exercise introduction (Merging)
-#    - stop: 03:28:34
-#    - start: 03:48:38
-#    - -: Going over the exercise (Merging)
-#    - 03:56:49: Looking at more pull requests and discussing what this all means
-#    - 04:01:19: Q&A from notes
-#    - stop: 04:09:48
-#    - start: 04:19:30
-#    - -: Demonstration of creating a pull req conflict
-#    - 04:21:45: Create new branch and add commit
-#    - 04:23:20: Create new commit on main branch
-#    - 04:24:04: Create a new pull request from new branch → main branch and discuss
-#    - 04:25:56: Try to resolve the conflicting change
-#    - 04:28:08: Summary
-#    - 04:30:27: Big picture of the day
-#    - 04:31:51: Q&A, feedback of the day
-#    - 04:41:24: News of day 1, preparation for day 2
-#    - stop: 04:44:30
-#
-#
-#
-#
+# Intro
+- output: out/day1-intro.mkv
+  title: 1.1 Intro
+  description: >
+    The introduction to this workshop, explaining general mechanics
+    and what CodeRefinery is.
+
+    https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
+  time:
+     - start: 00:17:59
+     - stop: 00:36:06
+
+# Git-intro day 1
+- output: out/day1-git-intro-1.mkv
+  title: 1.2 Git Intro (day 1)
+  description: >
+    Here, we go over the basics of git from first principles, using
+    the GitHub web interface.  First, we talk about basic motivation
+    about why version control.  Then, we use the GitHub web interface
+    to understand the basics of history, branches, commits, and
+    merges, conflict resolution (online), and how everything fits
+    together.  This isn't how normal work would happen, but it's a
+    much easier starting point.  Part 2 (on day 2) goes to local work
+    using all the same concepts we learned today.
+
+    Multi-user work and remotes is the next lesson, git-collaborative,
+    on day 3.
+
+    There are two external videos which are excluded from this
+    recording.  You can find the link to them in the table of contents
+    below.
+
+    https://coderefinery.github.io/git-intro/
+
+  time:
+    - start: 00:37:20
+    - -: Overview of the day
+    - 00:41:46: '§ Motivation to version control'
+    - 00:58:19: '§ Browsing an existing project'
+
+    - 01:10:17: Exercise introduction (Browsing)
+    - exercise: 01:12:16
+    - start: 01:38:47
+    - -: Exercise follow-up/going through it (Browsing)
+    - 01:53:33: '§ Committing changes'
+    - 01:56:15: Exercise introduction (Committing)
+    - lunch: 01:58:53
+    # lunch + exercise
+    - start: 03:17:56
+    - -: Going over the exercise (Committing) + begin demo of next section
+    - 03:41:47: '§ Merging changes'
+    - 03:47:11: Exercise introduction (Merging)
+    - exercise: 03:50:38
+    - start: 04:11:41
+    - -: After exercise, demo of pull request to upstream
+    - 04:15:12: Q&A
+    - break: 04:16:41
+    - start: 04:28:38
+    - -: More Q&A
+    - 04:30:48: Demonstration of creating a conflict in a pull request
+    - 04:39:57: Summary, Q&A
+    - 04:46:18: News of day 1, preparation for day 2
+    - stop: 04:51:25
+
+
+
+
 ## Day 2
 #- input: raw/day2-obs.mkv
 #- schedule-sync: 20:28=9:00:00
