@@ -96,10 +96,10 @@
 
 
 
-## Day 2
-#- input: raw/day2-obs.mkv
-#- schedule-sync: 20:28=9:00:00
-#
+# Day 2
+- input: raw/day2-obs.mkv
+- schedule-sync: 00:16:47=9:00:00
+
 ## Day 2 icebreaker
 #- output: out/day2-icebreaker.mkv
 #  title: 2.1 Day 2 icebreaker and intro
@@ -109,78 +109,73 @@
 #  time:
 #    - start: 00:06:14
 #    - stop: 00:20:28
-#
-### Day 2 intro
-##- output: out/day2-intro.mkv
-##  title: 2.2 Day 2 introduction
-##  description: >
-##    The introduction to day 2 recapping day 1 and giving background of
-##    day 2.
-##  editlist:
-##    - start: 00:18:08
-##    - 00:20:42: For newcomers
-##    - stop: 00:26:16
-##
-## Git-intro day 2
-#- output: out/day2-git-intro-2.mkv
-#  title: 2.3 Git Intro day 2
-#  description: >
-#    Part 2 of the previous video: https://www.youtube.com/watch?v=yoK3p4FZ66U&list=PLpLblYHCzJAC5BCOYGsbxg9hWpVX2g8nf&index=2
-#
-#    We continue where we left off from day 1.  We advance by working
-#    locally: first, cloning a repository and doing some of the same
-#    things we did yesterday (committing, branching, etc).  Then, we
-#    clone a sample repository and use it to practice more advanced
-#    history inspection.  Then, we show and practice taking a project
-#    that isn't controlled by git, doing the "git init", and doing all
-#    of the tracking, linking to the web repository (GitHub, GitLab,
-#    etc).  The day ends with lots of practical advice on various
-#    topics.
-#
-#    https://coderefinery.github.io/git-intro/
-#  editlist:
-#    - start: 00:20:28
-#    - -: Starting words
-#    - 00:24:55: '§ Cloning a git repository and working locally'
-#    #- : Demonstration of cloning a repository locally
-#    - 00:34:40: Exercise introduction (cloning)
-#    - stop: 00:39:13
-#    #- start: 01:18:04
-#    #- -: After exercise
-#    #- stop: ??
-#    - start: 01:04:01
-#    - -: Exercise Q&A (cloning)
-#    - 01:05:14: Going thourgh exercise solution
-#    - stop: 01:16:39
-#    - start: 01:25:51
-#    - -: A bit more Q&A (and comparison of GitHub, VSCode, and command line)
-#    - 001:28:56: '§ Inspecting history'
-#    - 01:30:05: Demonstration of the exercise topics
-#    - 01:40:36: Exercise introduction (inspecting history)
-#    - stop: 01:44:35
-#    - start: 02:04:23
-#    - -: Exercise Q&A (inspecting history)
-#    - stop: 02:13:54
-#    - start: 03:11:23
-#    - -: "Back from break, more comments on previous exercise"
-#    - 03:13:05: '§ How to turn your project into a Git repo and share it'
-#
-#    - 03:25:42: Exercise introduction (sharing)
-#    - stop: 03:27:44
-#    - start: 03:51:00
-#    - -: Exercise Q&A (sharing)
-#    - 03:52:13: Thoughts on publishing work
-#    - 03:55:33: '§ Practical advice: how much git is necessary? (general Q&A)'
-#    - stop: 04:07:58
-#    - start: 04:17:46
-#    - -: General discussion and Q&A session
-#    - 04:23:38: '§ What to avoid'
-#    - 04:30:17: Feedback of the day and more discussion
-#    - 04:31:33: Preparation for day 3
-#    - stop: 04:39:17
-#
-#
-#
+
+# Day 2 intro
+- output: out/day2-intro.mkv
+  title: 2.2 Day 2 introduction
+  description: >
+    The introduction to day 2 recapping day 1 and giving background of
+    day 2.
+  editlist:
+    - start: 00:17:15
+    #- : For newcomers
+    - stop: 00:21:02
+
+# Git-intro day 2
+- output: out/day2-git-intro-2.mkv
+  title: 2.3 Git Intro day 2
+  description: >
+    Part 2 of the previous video: https://www.youtube.com/watch?v=0u2K7KJBL-U&list=PLpLblYHCzJACpOmIzO8TywjtfYD7_d93H&index=2
+
+    We continue where we left off from day 1.  We advance by working
+    locally: first, cloning a repository and doing some of the same
+    things we did yesterday (committing, branching, etc).  Then, we
+    clone a sample repository and use it to practice more advanced
+    history inspection.  Then, we show and practice taking a project
+    that isn't controlled by git, doing the "git init", and doing all
+    of the tracking, linking to the web repository (GitHub, GitLab,
+    etc).  The day ends with lots of practical advice on various
+    topics.
+
+    https://coderefinery.github.io/git-intro/
+  editlist:
+    - start: 00:21:02
+    #- -: Starting words
+    - -: '§ Cloning a git repository and working locally'
+    #- : Demonstration of cloning a repository locally
+    - 00:27:21: Exercise introduction (cloning)
+    - exercise: 00:33:06
+    - start: 00:57:21
+    - -: Exercise demo (cloning) via command line
+    - break: 01:15:38
+    - start: 01:26:19
+    - -: Discussion about exercise, command line, and following along
+    - 01:28:03: '§ Inspecting history'
+    - 01:32:06: Demonstration of the exercise topics
+    - 01:42:55: Exercise introduction (inspecting history)
+    - exercise: 01:45:06
+    - start: 02:07:15
+    - -: Exercise Q&A (inspecting history)
+    - 02:08:16: git bisect exercise as demo
+    - lunch: 02:15:21
+    - start: 03:17:09
+    - -: '§ How to turn your project into a Git repo and share it'
+    - 03:22:38: Demonstration of exercise (sharing) (with vscode)
+    - 03:33:18: Exercise introduction (sharing)
+    - exercise: 03:33:51
+    - start: 04:00:01
+    - -: Exercise and general Q&A (sharing)
+    - 04:05:39: Different types of remote repositories and thoughts on publishing work
+    - break: 04:08:26
+    - start: 04:18:52
+    - -: '§ Practical advice: how much git is necessary? (general Q&A)'
+    - 04:35:03: '§ What to avoid'
+    - 04:40:23: General discussion and Q&A session
+    - 04:46:10: News and preparation for day 3
+    - stop: 04:48:51
+
+
+
 ### Day 3
 #- input: raw/day3-obs.mkv
 #- schedule-sync: 00:21:31=9:00:00
