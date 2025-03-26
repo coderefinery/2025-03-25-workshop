@@ -56,7 +56,7 @@ schedule:
         title: Introduction to version control with Git - part 4/4
         url: https://coderefinery.github.io/git-intro/
         presenters: Diana Iusan, Richard Darst
-        subtitle: "[Sharing work](https://coderefinery.github.io/git-intro/sharing/)"
+        subtitle: "[Sharing work](https://coderefinery.github.io/git-intro/sharing/), [Practical advice](https://coderefinery.github.io/git-intro/level/), [What to avoid](https://coderefinery.github.io/git-intro/what-to-avoid/)"
   - title: "Day 3"
     date: "2025-03-27"
     sessions:
