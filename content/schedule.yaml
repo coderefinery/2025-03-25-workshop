@@ -29,18 +29,18 @@ schedule:
         ends: 8:20
         title: Welcome and introduction
         url: https://github.com/coderefinery/workshop-intro/blob/master/livestream.md
-        presenters: TBA
+        presenters: Samantha Wittke
       - starts: 8:20
         ends: 10:00
         title: Introduction to version control with Git - part 1/4
         subtitle: "Why we want to track versions and how to go back in time to a working version: [Motivation](https://coderefinery.github.io/git-intro/motivation/), [Browsing](https://coderefinery.github.io/git-intro/browsing/), [Commiting](https://coderefinery.github.io/git-intro/commits/)"
         url: https://coderefinery.github.io/git-intro/
-        presenters: Diana Iusan, Gregor Decristoforo
+        presenters: Diana Iusan, Richard Darst
       - starts: 11:00
         ends: 12:30
         title: Introduction to version control with Git - part 2/4
         url: https://coderefinery.github.io/git-intro/
-        presenters: Diana Iusan, Gregor Decristoforo
+        presenters: Diana Iusan, Richard Darst
         subtitle: "[Merging](https://coderefinery.github.io/git-intro/merging/)"
   - title: "Day 2"
     date: "2025-03-26"
