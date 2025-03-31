@@ -109,7 +109,7 @@ schedule:
         title: Jupyter notebooks
         subtitle: A tool to write and share executable notebooks and data visualization
         url: https://coderefinery.github.io/jupyter/
-        presenters: TBA
+        presenters: Jarno Rantaharju, Michele Mesiti
   - title: "Day 6"
     date: "2025-04-03"
     sessions:
