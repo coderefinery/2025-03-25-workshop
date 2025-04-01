@@ -1,9 +1,14 @@
 +++
 +++
 
-### News
+### News (day 4)
 
-- On day 3, we went over the topics as listed in the schedule and did all exercises.
-- Next week: still using Git/Github, but now applying to different tasks
-- Next week is all demos, no exercises (there are exercises, but too involved to fit into the day - you can do them later)
-- You can definitely attend next week if you didn't this week - if you know git, you can follow it all.  If not, you'll see ideas you can study more and apply later.
+- We did the lessons as covered in the schedule.
+- Tomorrow continues like today: demos, discussion, Q&A (no exercise
+  or type-along).
+- There is more you *can* do yourself if you install the software
+  requirements (but we don't expect this, or give you time to do it).
+  Consider it like homework.
+- Tomorrow's topics are: Documentation (including how to document the
+  way we make our lessons) and Jupyter (focus on reproducibility and
+  sharing)
