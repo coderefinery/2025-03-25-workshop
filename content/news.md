@@ -3,12 +3,11 @@
 
 ### News (day 4)
 
-- We did the lessons as covered in the schedule.
-- Tomorrow continues like today: demos, discussion, Q&A (no exercise
-  or type-along).
-- There is more you *can* do yourself if you install the software
-  requirements (but we don't expect this, or give you time to do it).
-  Consider it like homework.
-- Tomorrow's topics are: Documentation (including how to document the
-  way we make our lessons) and Jupyter (focus on reproducibility and
-  sharing)
+- We covered the lessons as shown in the schedules.  All demos, you
+  can do more later.
+- Tomorrow we have: testing (practical, still a demo but has real
+  exercises you can do later), and moduloar code development (this is
+  a demo + discussion - you see ous go from Jupyter to a reusable
+  program.  Very cool stuff.)
+- Don't forget the "bring your own code" sessions where you can get
+  more help with your own work, or more Q&A on the lesson topics.
