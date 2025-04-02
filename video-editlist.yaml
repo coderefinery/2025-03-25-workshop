@@ -255,9 +255,10 @@
     - stop: 04:47:30
 
 
-#### Day 4
-#- input: raw/day4-obs.mkv
-#
+### Day 4
+- input: raw/day4-obs.mkv
+- schedule-sync: 18:29=9:00:00
+
 #- output: out/day4-icebreaker.mkv
 #  title: 4.1 Second week intro
 ##  description: >
@@ -278,61 +279,60 @@
 #    - stop: 00:21:13
 #
 #
-#- schedule-sync: 00:00:49=09:06:00
-#- output: out/day4-reproducible-research.mkv
-#  title: 4.2 Reproducible Research
-#  description: >
-#    If you can't get your code to do the same thing again, is it
-#    really science?  Or more practically, are you able to do your
-#    work?  Reproducibilty is a big deal, but we don't always learn how
-#    to do it.  In this lesson, we cover the basics, how to organize
-#    projects, record computational steps with Snakemake or other
-#    workflow managers, how to record environments with conda (and
-#    containers a bit), and sharing code and data (FAIR).
-#
-#    https://coderefinery.github.io/reproducible-research/
-#
-#  time:
-#    - input: raw/day4-obs.mkv
-#    - start: 00:00:49
-#    - -: § Motivation
-#    - 00:09:07: § Organizing your projects
-#    - 00:26:25: § Recording computational steps
-#    - stop: 00:47:59
-#    - start: 00:57:05
-#    - -: § Recording dependencies
-#    - 01:24:31: § Recording environments
-#    - 01:47:48: § Where to go from here?
-#    - stop: 01:53:59
-#
-#
-#- output: out/day4-social-coding.mkv
-#  title: 4.3 Social coding
-#  description: >
-#    We don't just program for ourselves: we are part of a community.
-#    As scientists, we want to get citations, so how can our software
-#    support this?  Our work is a constant balance between using the
-#    work of others and hoping that others will use our work.  In this
-#    lesson, we talk about the advantages and disadvantages of others
-#    building on our work, and how to support that.
-#
-#    We cover best practices for software/data projects, requirements
-#    for sharing, copyright, licensing, citation, and more.
-#
-#    https://coderefinery.github.io/social-coding/
-#  time:
-#    - start: 02:54:44
-#    - 02:59:15: § Social Coding
-#
-#    - 03:19:27: § Software licensing
-#    - stop: 03:47:10
-#    - start: 03:57:01
-#    - -: § Software citation
-#    - 04:08:20: § Sharing data
-#    - 04:17:22: Feedback, news for day, and further Q&A
-#    - stop: 04:24:32
-#
-#
+- output: out/day4-reproducible-research.mkv
+  title: 4.1 Reproducible Research
+  description: >
+    If you can't get your code to do the same thing again, is it
+    really science?  Or more practically, are you able to do your
+    work?  Reproducibilty is a big deal, but we don't always learn how
+    to do it.  In this lesson, we cover the basics, how to organize
+    projects, record computational steps with Snakemake or other
+    workflow managers, how to record environments with conda (and
+    containers a bit), and sharing code and data (FAIR).
+
+    https://coderefinery.github.io/reproducible-research/
+
+  time:
+    - start: 00:18:57
+    - 00:22:46: '§ Introduction: how the workshop all connects'
+    - 00:29:13: § Motivation
+    - 00:41:14: § Organizing your projects
+    - 00:52:25: § Recording computational steps
+    - stop: 01:15:18
+    - start: 01:24:56
+    - -: § Recording dependencies
+    - 01:49:40: § Recording environments
+    - 02:11:25: § Where to go from here?
+    - stop: 02:18:32
+
+
+- output: out/day4-social-coding.mkv
+  title: 4.2 Social coding
+  description: >
+    We don't just program for ourselves: we are part of a community.
+    As scientists, we want to get citations, so how can our software
+    support this?  Our work is a constant balance between using the
+    work of others and hoping that others will use our work.  In this
+    lesson, we talk about the advantages and disadvantages of others
+    building on our work, and how to support that.
+
+    We cover best practices for software/data projects, requirements
+    for sharing, copyright, licensing, citation, and more.
+
+    https://coderefinery.github.io/social-coding/
+  time:
+    - start: 03:19:10
+    - -: § Social Coding
+
+    - 03:51:31: § Software licensing
+    - stop: 04:20:21
+    - start: 04:31:08
+    - -: § Software citation
+    - 04:38:50: § Sharing data
+    - 04:42:39: Feedback, news for day, and further Q&A
+    - stop: 04:51:05
+
+
 #######- output: out/day4-outro.mkv
 #######  title: 4.3 Day 4 final remarks
 #######  description: >
