@@ -1,13 +1,13 @@
 +++
 +++
 
-### News (day 4)
+### News (day 6)
 
-- We covered the lessons as shown in the schedules.  All demos, you
-  can do more later.
-- Tomorrow we have: testing (practical, still a demo but has real
-  exercises you can do later), and moduloar code development (this is
-  a demo + discussion - you see ous go from Jupyter to a reusable
-  program.  Very cool stuff.)
-- Don't forget the "bring your own code" sessions where you can get
-  more help with your own work, or more Q&A on the lesson topics.
+- We covered the lessons as in the schedule.
+- The outro sesson went over future directions you can study if you
+  want - recommend reading and/or watching.
+- Don't forget the "bring your own code" session where you can come
+  ask us - the instructors - about your own code or any follow-up
+  questions.  Please register so we know how many might come and what
+  topics to prepare.
+- Information on certificates is on its page.
