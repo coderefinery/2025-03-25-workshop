@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 6 - CodeRefinery workshop March 25-27 and April 1-3, 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-03-25-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 6</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:title" content="Questions and notes from workshop day 6" />
+      <meta property="og:site_name" content="CodeRefinery workshop March 25-27 and April 1-3, 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-03-25-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 6</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#icebreaker">Icebreaker</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#what-programming-language-s-are-you-normally-working-with">What programming language(s) are you normally working with:</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#whats-the-weather-like-at-your-place-and-where-is-that">Whats the weather like at your place (and where is that)</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#what-do-you-know-now-that-you-wish-someone-had-told-you-when-you-began-studies-research-work">What do you know now, that you wish someone had told you when you began [studies&#x2F;research&#x2F;work]?</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#discussion-what-s-easy-and-hard-to-test">Discussion: What’s easy and hard to test?</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#testing-locally-https-coderefinery-github-io-testing-locally-testing-locally">Testing locally https:&#x2F;&#x2F;coderefinery.github.io&#x2F;testing&#x2F;locally&#x2F;#testing-locally</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#automated-testing">Automated testing</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#test-design">Test design</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#modular-code-development">Modular code development</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#starting-questions">Starting questions</a>
+              
+            </li>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#additional-questions">Additional questions</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#modular-code-task">Modular code task</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#workshop-outro">Workshop outro</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#news-for-day-6">News for day 6</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day6/#feedback">Feedback</a>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreaker">Icebreaker</h2>
+<h3 id="what-programming-language-s-are-you-normally-working-with">What programming language(s) are you normally working with:</h3>
+<ul>
+<li>python: ooooooooooooooooo</li>
+<li>R: oooooooo</li>
+<li>C:</li>
+<li>C#:</li>
+<li>C++: oo</li>
+<li>Java: o</li>
+<li>Fortran:o</li>
+<li>Rust: o</li>
+<li>Julia:</li>
+<li>Javascript: oo</li>
+<li>Typescript: oo</li>
+<li>Matlab: oooooo</li>
+<li>... (add if yours is missing)</li>
+<li>Natural language (ChatGPT ? :)): oo</li>
+<li>shell/bash: oooooooooo</li>
+</ul>
+<h3 id="whats-the-weather-like-at-your-place-and-where-is-that">Whats the weather like at your place (and where is that)</h3>
+<ul>
+<li>Sunny, some clouds, Espoo, FI +1+1</li>
+<li>sunny, Newcastle,UK +1</li>
+<li>Sunny in Helsinki +1</li>
+<li>Sunny, Bergen, Norway +1</li>
+<li>Sunny (Ulm, Germany)</li>
+<li>Sunny and windy, Greece</li>
+<li>Sunny, Taipei, Taiwan</li>
+<li>Sunny, Joensuu</li>
+<li>Sunny, The Netherlands</li>
+<li>Sunny, Freiburg, Germany</li>
+</ul>
+<h3 id="what-do-you-know-now-that-you-wish-someone-had-told-you-when-you-began-studies-research-work">What do you know now, that you wish someone had told you when you began [studies/research/work]?</h3>
+<ul>
+<li>It's worth caring about the technical qualities of your work, since that is most likely to help your future career</li>
+<li>It will improve, eventually</li>
+<li>Packaging your code will save you time in the long run</li>
+<li>Writing test cases is part of the software development process</li>
+<li>The concept of unit test</li>
+<li>Organising my projects and codes will save me time in the future.</li>
+<li>it would have been easier to rewrite the uncommented undocumented code than to try to figure out how to do this after the fact</li>
+<li>it is so worth it to start a private git repo for your work, even very elementary burgeoning work</li>
+</ul>
+<h2 id="discussion-what-s-easy-and-hard-to-test">Discussion: What’s easy and hard to test?</h2>
+<ul>
+<li>95%+ code coverage is hard on complex and legacy code</li>
+<li>Hard: Functions/ models you want to work with very large datasets where you need many variables</li>
+<li>Testing if students generate the correct R figure</li>
+<li>It is hard to take time to implement tests in your coding routine.</li>
+<li>generally hard if you don't have modualr code</li>
+</ul>
+<h2 id="testing-locally-https-coderefinery-github-io-testing-locally-testing-locally">Testing locally https://coderefinery.github.io/testing/locally/#testing-locally</h2>
+<ul>
+<li>What if my test function has errors?
+<ul>
+<li>Running the test reveals them :) If you find an error you often need to check both the code and the test.</li>
+</ul>
+</li>
+<li>What is required in the test function to be tested by pytest? e.g. assert?
+<ul>
+<li>Pytest will run functions that start with "test_". They don't need to have asserts, but those are usually added to check for specific results. Without asserts, you are still testing if the code runs without errors.</li>
+</ul>
+</li>
+<li>What would be a good alternative for pytest when using R?
+<ul>
+<li>I have never used it but it seems that this package is quite close to pytest https://cran.r-project.org/web/packages/testthat/index.html (my R use is just calling other people's functions so not much testing needed)</li>
+</ul>
+</li>
+</ul>
+<h2 id="automated-testing">Automated testing</h2>
+<p>https://coderefinery.github.io/testing/continuous-integration/</p>
+<ul>
+<li>a bit fast, should we do the exercise in parallel with you?
+<ul>
+<li>We're not giving enough time, so I would watch and try to understand, and do in the afternoon while reading/watching the material.</li>
+<li>Yes, please follow along.</li>
+</ul>
+</li>
+<li>How often do you use automated testing?  When do you add it?
+<ul>
+<li>If I publish the code, I try to add tests that cover the most important functions. But my recommendation would be to do it from the beginning, whenever your code has functions :)</li>
+<li>Depends on what I'm planning to do. If it's something that will become a library, test everything from the beginning. If it's just playing around with things, I will not test that much.</li>
+</ul>
+</li>
+</ul>
+<h2 id="test-design">Test design</h2>
+<p>https://coderefinery.github.io/testing/test-design/</p>
+<ul>
+<li>How complete do you usually make tests - what do you find practical?
+<ul>
+<li>Depends again on whee, not everything needs to be tested necessarily, but especially for things where I want to make sure that I don't get "nonsense" I would make sure that the functio gives the right error (Concept of better failing than getting invalid outputs).</li>
+</ul>
+</li>
+<li>If the code will raise an error/quit if an certain error condition happens, do you usually make a test for it or consider "I'll see it when it comes?"
+<ul>
+<li>Depends on how important the error is and how expected it is to get this and / or if it is handled in the code. If It's a "runtime error": no, but if it's an error I want to make sure is thrown (because I handle that kind of error in an enclosing function) than yes.</li>
+</ul>
+</li>
+<li>Do you ever make tests to see what the function actually does, and develop code+tests together?
+<ul>
+<li>This works and I some times do this. But usually, I would check what the code actually does in Jupyter and then move the function to tests once I've figured it out.</li>
+</ul>
+</li>
+<li>.split() splits on whitespace by default, so for <code>AAAAA</code> returns the same thing.  <code>AAA</code> is not in the list [<code>AAAAA</code>].</li>
+<li>"r" is missing in "occurence" in def test_count_word_occurence_in_string():. This is why the error said "count_word_occurence_in_sring is not defined"
+<ul>
+<li>Oh good catch!</li>
+</ul>
+</li>
+<li>How often do you make end-to-end tests in scientific code?
+<ul>
+<li>I often modify someone else's code. In that case, I make an end-to-end test to make sure I don't break anything.</li>
+<li>I think most codes should have some full end-to-end tests. They prevent a lot of problems in the long run.</li>
+<li>Not as ofte as I should...</li>
+<li>A good rule of thumb: When you fix a bug, you also have time to add a test that checks that function / part of the code. For end to end tests, if you notice a problem in untested code, it's probably time to add a test that runs the full code.</li>
+</ul>
+</li>
+</ul>
+<h2 id="modular-code-development">Modular code development</h2>
+<p>https://coderefinery.github.io/modular-type-along/</p>
+<h3 id="starting-questions">Starting questions</h3>
+<p>A. What does "modular code development" mean for you?</p>
+<ul>
+<li>Different pieces are usabel separately and/or separatable.  Somehow organized in abstraction layers (like say, network stacks, ...).  Should abstraction layer concepts be taught more?</li>
+<li>Split up code into different ideas</li>
+<li>create bits of code that can work independently to solve a task</li>
+<li>having different functionalities separated within the same file (methods, classes) or different files. They can be interconnected, but still independent somehow</li>
+</ul>
+<p>B. What best practices can you recommend to arrive at well structured, modular code in your favourite programming language?</p>
+<ul>
+<li>Think about it.  Functions/modules.  Try to make it like a library if if is relevant.</li>
+<li>my favorite language is python, so overall, I try to follow pep8 to make it easy for others to contribute/use the code</li>
+<li>In Python, always tryto have a "main" function that gets run with the <code>if __name__ ='__main__'</code>.  When I don't do this I have usually regreted it.
+<ul>
+<li>Why is that? A script will run when you call it from the command line.</li>
+<li>Because too often, I've wanted to extend it later and call it from other code.  Then I need major rearrangements that would have been easier earlier.  (If I never get to that point, yeah, it doesn't matter)
+<ul>
+<li>Can you explain the benefit of having the main function? You can, after all, import a script and its contents into another using the <code>import xxx.py</code> command.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>plan in advance, think a bit ahead even for small or trivial scripts (will you reuse it in the future? could it be useful for someone else or as part of something else?). That said, don't overthink it either, this can be a rabbit hole.</li>
+<li>Think of minimum good parts that might be reused.  Put them into separate functions/modules that are easy to test.  Combine that with your "hackish code" to solve your immediate problem.</li>
+<li>adding (simple, useful) comments from the beginning usually helps to structure things too, and helps to figure out missing parts or future developments.</li>
+</ul>
+<p>C. What do you know now about programming that you wish somebody told you earlier?</p>
+<ul>
+<li>if you are going to change something in the code, do it in a copy version of it and also start simple is not a bad thing, you can extend what you've created after</li>
+<li>About making proper libraries, however your chosen language does it.</li>
+<li>version control is useful and easy! You can do it just for yourself in your messiest scripts and will save you a lot of time.</li>
+<li>Use an IDE/editor with color coding, syntax suggestions and checkers, but also don't use a huge IDE that doesn't feel light and ready to use for everything.</li>
+</ul>
+<h3 id="additional-questions">Additional questions</h3>
+<p>D. Do you design a new code project on paper before coding? Discuss pros and cons.</p>
+<ul>
+<li>It depends on the code. If it is simple or straightforward (meaning linear thinking is enough), I usually write a code structure as comments (like a recipe) and then start adding the code itself. Otherwise, paper helps to draft the idea and it is sometimes the only way I have to grasp how to start building the code.</li>
+<li>When I have done this, I have always been happy with the outcome.  Unfortunately I hardly ever do it.</li>
+<li>Sometimes I do, when for example I want to follow design patterns, because i'm still working on fully grasping the concepts. The pros: helps to better visualize what I need to do; and the cons: it will consume time to do it</li>
+</ul>
+<p>E. Do you build your code top-down (starting from the big picture) or bottom-up (starting from components)? Discuss pros and cons.</p>
+<ul>
+<li>A bit of both perhaps?  Usually I try to connect top and bottom as quickly as possible and then for each new thing, start at top/bottom as necessary. +1+1</li>
+<li>Bottom-up. I try to divide in small tasks and solve each task, then I assembly everything. If you can easy get distracted or overwhelmed like me, it is good to focus on each step. The bad part is that sometimes you need to backtrack and refactor previous tasks to optimized or fix a dependent future task/component.</li>
+<li>.</li>
+</ul>
+<p>F. Would you prefer your code to be 2x slower if it was easier to read and understand?</p>
+<ul>
+<li>For most code yet, not the 5% of code that is time-critical.</li>
+<li>It really depends on the application. +1</li>
+<li>If optimization is not required, yes.</li>
+</ul>
+<h2 id="modular-code-task">Modular code task</h2>
+<p>https://coderefinery.github.io/modular-type-along/lesson/</p>
+<p>Suggestions for improving the code:</p>
+<ul>
+<li>When do you go to modules?</li>
+<li>Split the loop from tdhe plotting. +1</li>
+<li>you could also create a function for the plotting, other for the reading/computation (or put everything in the same function). This could become a class, but isn't it going too far for such simple code?</li>
+<li>Remember not everyone watching knows Python (but I guess the principles apply everywhere?)</li>
+<li>in the <code>plot_data</code> function, I think <code>mean</code> should also be a parameter</li>
+<li><del>I guess .show() tries to open a graphical window?</del>  Oh yes .show() may clear the plot for the next one... from matplotlib documentation: "If you want an image file as well as a user interface window, use pyplot.savefig before pyplot.show."</li>
+<li>Should data be read once for each temperature or once for all?</li>
+<li>Command line interface? Specify input files and output files from outside the Python code.</li>
+<li>You could use a mean function from some other library, like numpy?
+<ul>
+<li>And make the function pluggable - throw in any function there.</li>
+<li>Some thing I have somehow done before: from the command line, give the function name like <code>numpy.mean</code> and it automatically imports and uses that.  (be careful with security/bugs though...)</li>
+</ul>
+</li>
+<li>we could add a test</li>
+<li>Can we get to command line parts (and related - git, tests, package, ...?)</li>
+<li>So you can use "r-" in plt.plot(temperatures, "r-") to plot a red line instead of plt.plot(temperatures, color="red", linestyle="-") ?</li>
+<li>Are there advantages to using <code>click</code> over <code>argparse</code>?
+<ul>
+<li><code>click</code> is more modern, easier to use, but an external dependency.  If you are using other external dependencies, you may as well use this.</li>
+<li><code>argparse</code> is built in in case you want to make something that can run with no dependencies at all.</li>
+</ul>
+</li>
+<li>It's almost break time</li>
+<li>What's the code that does it?
+<ul>
+<li>Hm... yeah.  I don't know.</li>
+</ul>
+</li>
+<li>Working example test:<pre data-lang="python" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-python "><code class="language-python" data-lang="python"><span> </span><span style="color:#72ab00;">def </span><span style="color:#c23f31;">test_plot_data</span><span>():
+</span><span>     temperatures </span><span style="color:#72ab00;">= </span><span style="color:#5597d6;">read_data</span><span>(</span><span style="color:#d07711;">&quot;tests/data/temperatures.csv&quot;</span><span>)
+</span><span>     </span><span style="color:#72ab00;">with </span><span>tempfile.</span><span style="color:#5597d6;">NamedTemporaryFile</span><span>(</span><span style="color:#5597d6;">delete</span><span style="color:#72ab00;">=</span><span style="color:#b3933a;">False</span><span>) </span><span style="color:#72ab00;">as </span><span>tmp_file:
+</span><span>         tmp_file_name </span><span style="color:#72ab00;">= </span><span style="color:#668f14;">f</span><span style="color:#d07711;">&quot;</span><span>{tmp_file.name}</span><span style="color:#d07711;">.png&quot;
+</span><span>     </span><span style="color:#5597d6;">plot_data</span><span>(temperatures[</span><span style="color:#b3933a;">0</span><span>:</span><span style="color:#b3933a;">25</span><span>], tmp_file_name)
+</span><span>     </span><span style="color:#72ab00;">with </span><span style="color:#b39f04;">open</span><span>(tmp_file_name, </span><span style="color:#d07711;">&quot;rb&quot;</span><span>) </span><span style="color:#72ab00;">as </span><span>test_output:
+</span><span>         </span><span style="color:#72ab00;">with </span><span style="color:#b39f04;">open</span><span>(</span><span style="color:#d07711;">&quot;tests/data/25.png&quot;</span><span>, </span><span style="color:#d07711;">&quot;rb&quot;</span><span>) </span><span style="color:#72ab00;">as </span><span>correct_output:
+</span><span>             data1 </span><span style="color:#72ab00;">= </span><span>test_output.</span><span style="color:#5597d6;">read</span><span>()
+</span><span>             data2 </span><span style="color:#72ab00;">= </span><span>correct_output.</span><span style="color:#5597d6;">read</span><span>()
+</span><span>             </span><span style="color:#72ab00;">assert </span><span>data1 </span><span style="color:#72ab00;">==  </span><span>data2
+</span></code></pre>
+The issues during presentation were:
+<ul>
+<li>we are comparing binary data (hence need to open them in binary format)</li>
+<li>matplotlib automatically adds a filename extension to the file, so we were opening the wrong file during comparison.</li>
+</ul>
+</li>
+</ul>
+<h2 id="workshop-outro">Workshop outro</h2>
+<p>https://github.com/coderefinery/workshop-outro/blob/master/README.md</p>
+<ul>
+<li>CATS</li>
+<li>https://coderefinery.zulipchat.com</li>
+<li>https://coderefinery.org/#newsletter</li>
+</ul>
+<h2 id="news-for-day-6">News for day 6</h2>
+<ul>
+<li>We covered the lessons as in the schedule</li>
+<li>The outro sesson went over future directions you can study if you want - recommend reading and/or watching.</li>
+<li>Don't forget the "bring your own code" session where you can come ask us - the instructors - about your own code or any follow-up questions.  Please register so we know how many might come and what topics to prepare.</li>
+</ul>
+<h2 id="feedback">Feedback</h2>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow:</li>
+<li>right speed: ooooo</li>
+<li>too slow sometimes, too fast other times: ooo</li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: oooooo</li>
+<li>I will use what I learned today: oooo</li>
+<li>I would recommend today to others: ooooo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>Having parts of the lecture material also in my programming language (R ) made it easier for me to follow</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>..</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>This workshop is really helpful for me, thank you all. +1+1+1</li>
+<li>This workshop should be mandatory to students/researchers after their first programming course. It's better to start using version control as early as possible +1</li>
+<li>Really good initiative. Software development concepts are always welcome +1</li>
+<li>The collaborative notes were nice for interaction +1+1+1</li>
+<li>The kitty could be the course's mascot +1+1</li>
+</ul>
+<p>General questions continued:</p>
+<ul>
+<li>
+<p>Is the course material available online almost indefinitely in cases we neede them in future?</p>
+<ul>
+<li>yes (with updates)</li>
+</ul>
+</li>
+<li>
+<p>To what email address do we need to send the documents to in order to receive a credit? I found this one: scip <em>@</em> aalto.fi but it contains spaces, I assume this is not correct? Should it be scip@aalto.fi then?</p>
+<ul>
+<li>adjust to removethe spam protection</li>
+<li>yes</li>
+</ul>
+</li>
+<li>
+<p>Can we also get a certificate if we are no longer a student (as doctoral candidate or postdoc)? I would like to have a certificate for future job applications.</p>
+<ul>
+<li>It says only people at a university.  Would you need it if you aren't?  I guess you can mail and ask.</li>
+<li>I relayed to our chat to see if I get an answer quickly</li>
+</ul>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-03-25-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

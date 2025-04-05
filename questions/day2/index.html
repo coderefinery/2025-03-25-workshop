@@ -1,0 +1,1215 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 2 - CodeRefinery workshop March 25-27 and April 1-3, 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-03-25-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 2</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 2" />
+      <meta property="og:title" content="Questions and notes from workshop day 2" />
+      <meta property="og:site_name" content="CodeRefinery workshop March 25-27 and April 1-3, 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-03-25-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 2</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#icebreakers">Icebreakers</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#any-questions-from-yesterday">Any questions from yesterday?</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#local-work-cloning">Local work (cloning)</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#inspecting-history">Inspecting history</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#turn-project-to-git-repo-and-share-it">Turn project to Git repo and share it</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#practical-advice">Practical advice</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#news-for-day-2-preparation-for-day-3">News for day 2 &#x2F; preparation for day 3</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day2/#feedback">Feedback</a>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreakers">Icebreakers</h2>
+<p>Let's test the notes with some icebreakers! :icecream:</p>
+<ul>
+<li>
+<p>What was the last animal you saw?</p>
+<ul>
+<li>shield bug</li>
+<li>was human, just changed to CATS</li>
+<li>cats +1+1</li>
+<li>my dog +1</li>
+<li>crow</li>
+<li>my dog</li>
+<li>people with dogs</li>
+<li>my cat</li>
+<li>Big dog +1</li>
+<li>Alligator</li>
+<li>Jackdaw</li>
+<li>pipsa possu</li>
+<li>human o</li>
+<li>seagull</li>
+<li>jumping spider</li>
+<li>a blind orange cat, not mine</li>
+<li>Dog</li>
+<li>silverfish bug</li>
+<li>3 Goldfishes</li>
+</ul>
+</li>
+<li>
+<p>Which path did you you use yesterday to interact with Git?</p>
+<ul>
+<li>GitHub: ooooooooooooooooooooooooooo</li>
+<li>VSCode: oo</li>
+<li>Command line: ooo</li>
+<li>I was not here yesterday (no problem): o</li>
+<li>I wished you offered a path for a different tool:
+<ul>
+<li>JupyterLab (git integrated as plugin, also available on CSC Puhti interactive JupyterLab, very convenient and beginner-friendly)</li>
+<li>..</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="any-questions-from-yesterday">Any questions from yesterday?</h2>
+<ol>
+<li>
+<p>How do you set up the webpages for the tutorials/documentation at https://coderefinery.github.io/?</p>
+<ul>
+<li>We'll talk about this on day 5!  It's basically here: https://coderefinery.github.io/documentation/gh_workflow/</li>
+</ul>
+</li>
+<li>
+<p>Is there anything you want us to repeat today?</p>
+</li>
+<li>
+<p>I did not really understand why I need tags</p>
+<ul>
+<li>If you want to say "version 1.0", that should be a fixed thing.  Branches change, tags shouldn't.  (When you update you would make "version 1.1")</li>
+<li>In research: E.g. if you use a specific version for your paper you could tag it with "nature_submission" indicating that this was the version used for submission to nature. That tag stays there, at exactly that version whether you later change stuff or not and you can go back to exactly that version of the code easily. If you would create  a branch "nature_submission", this branch could be altered later on, new commits added to it etc. but a tag would just stay with the commit you tagged. Essentially, a Tag is a more human readable variant of a commit hash that allows you to indicate one specific version.</li>
+</ul>
+</li>
+<li>
+<p>Where is the instructions for the first exercise of today?</p>
+<ul>
+<li>Here: https://coderefinery.github.io/git-intro/local-workflow/#exercise</li>
+</ul>
+</li>
+<li>
+<p>Is there any difference between using 'git clone' versus downloading the ZIP archive?</p>
+<ul>
+<li><code>git clone</code> links it to the Github repo, which means you can get updates and merge with your changes easily.</li>
+<li>Download zip gets you only the files - any updates are on you.</li>
+<li>I usually do <code>git clone</code> since it's as easy and I can get future updates if needed (and see any modifications I made)</li>
+</ul>
+</li>
+</ol>
+<h2 id="local-work-cloning">Local work (cloning)</h2>
+<p>https://coderefinery.github.io/git-intro/local-workflow/</p>
+<ol start="6">
+<li>
+<p>Step (3) Creating branches locally = for this one do we need to be in the same directory of recipe-book?</p>
+<ul>
+<li>yes!  The "current working directory" is very important and you should always be aware of it.</li>
+</ul>
+</li>
+<li>
+<p>🚨 In step (3), I think the arrow in the screenshot of the solution for VS code is pointing at the wrong dots, it should be the three dots next to "Changes", not the three dots next to "source control".</p>
+<ul>
+<li>Oh thanks.  I wonder if something changed between then and now.  What do other people see?</li>
+<li>You're correct. It should be the three dots from "Source Comtrol -&gt; Changes". Alternatively, one may click on th ebranch name at the bottom of the window and then create a new branch.</li>
+<li>I have used the Github issue tracker to make a note about this.  Thanks!</li>
+</ul>
+</li>
+<li>
+<p>What is the difference between <code>git switch</code> and <code>git checkout</code>?</p>
+<ul>
+<li><code>git checkout</code> was the original one and did several very different things (changed files, changed branches)</li>
+<li><code>git switch</code> was added a few years ago and <em>only</em> changes branches.  Most computers updated in the last 5 years should have <code>git switch</code> now.</li>
+</ul>
+</li>
+<li>
+<p>How do you know which branch you are on when working on the command line?</p>
+<ul>
+<li><code>git status</code> - always a good thing to run, often! +1</li>
+<li>alternatively, <code>git branch</code> it will add an asterix next to the branch name</li>
+</ul>
+</li>
+<li>
+<p>Is it possible to make git use, e.g. <code>vim</code> instead of <code>GNU Nano</code> for merge messages and stuff? I always have to look up how to quit, because I am not used to <code>GNU Nano</code>.</p>
+<ul>
+<li>Yes!  If you search <code>git editor vim</code> (or whatever) you will probably see how to do it very easily.</li>
+<li>Thanks! Found it! For anyone: <code>git config --global core.editor "vim"</code> (or any other of your choosing)</li>
+</ul>
+</li>
+<li>
+<p>Only for the merge or for everything?</p>
+<ul>
+<li>For the editor question above?</li>
+<li>Yes.</li>
+<li>Everything would be fine too. <code>git log</code> I can easily quit, because it is similar to <code>vim</code> but the editor always gets me :D</li>
+<li>The git editor config is used for any editor started from Git.  You can use other editors for files you are directly editing.
+<ul>
+<li>Thanks for the clarification.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>In step (4), I dont see +  sign to add the file for the next commit (in VS Code).</p>
+<ul>
+<li>Me neither</li>
+<li>VSCode I guess.  Does anyone know where it is now?
+<ul>
+<li>Make sure you have opened and modified the file. Then go to Source control -&gt; Changes and you'll see the list of modified files. Next to the file name, the "+"
+<ul>
+<li>it worked.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Do you need to be in the "source control" tab on the left sidebar? (Ah but my codium is still old so maybe not up to date..)</li>
+</ul>
+</li>
+<li>
+<p>Do we have to cd into the cloned directory before creating the branch?</p>
+<ul>
+<li>Yep!</li>
+</ul>
+</li>
+<li>
+<p>I did everything like in the walk through but when i want to merge the two branches the new files i added in the new branch dont show up in my main branch. i dont understand why?</p>
+<ul>
+<li>Hm, hard to say.  Maybe we can look at the demo and show commands to figure out the situation</li>
+<li><code>git log --oneline --all --graph --decorate</code> tells us some of what's going on (but, we only learn about this in the next hour)</li>
+<li>it worked. i think the problem was that i named my branch also new-recipe like yesterday. i changed the name and other worked.</li>
+<li>Thanks, good to know!</li>
+</ul>
+</li>
+<li>
+<p>Can GitHub Desktop also be used to perform these steps?</p>
+<ul>
+<li>I think Github Desktop integrates Git + an editor so you can do everything there.  (Can someone confirm)</li>
+<li>In general, there are <em>many</em> programs that do all these steps.  Once you know the concepts, search whatever editor/environment you want to use and you can find how to do it.  Highly recommended.</li>
+</ul>
+</li>
+<li>
+<p>What is this page, where presenter is pasting the code from github? Where the presenter is working right now....is it some word document, it cannt be. Ti AM REFERRING TO THE LIVE SESSION ONGOING. No, i mean the presenter who is speaking and presenting and writing the commands. thanks</p>
+<ul>
+<li>Was it the "clone" code or the other git commands?</li>
+<li>Most of this is on the lesson page, under the "Command line" path: https://coderefinery.github.io/git-intro/local-workflow/#solution-and-walk-through  (there might be some extra thrown in there, but this is the main part)</li>
+<li>Or do you mean the view in which there are all the commits listed on top of each other with a branching and merging line going on the left? That's output from <code>git graph</code> configured in <a rel="noopener" target="_blank" href="https://coderefinery.github.io/git-intro/configuration/#useful-alias-for-the-command-line">this (optional) part of the git setup</a></li>
+</ul>
+</li>
+<li>
+<p>The output from git commands is shown with less instead of printed to the terminal, even if the output is really short (e.g. two lines from <code>git branch</code>)</p>
+<ul>
+<li>This can likely be prevented by setting <code>git config --global core.pager "less -FX"</code>: <code>less</code> is the usual default pager, and the added <code>-FX</code> means that it will just print the contents if it's short (instead of entering the "interactive" mode with less than one page of content to view)</li>
+</ul>
+</li>
+<li>
+<p>So we have to use 'git add' even on files in the repo we only modify and do not create, in order to commit those changes to the repo?</p>
+<ul>
+<li>Yes! This allows you to choose not to commit everything at once (if you e.g. end up making unrelated changes without committing in between)</li>
+<li>Convenient shortcut is doing <code>git commit -a</code> to commit every modified (but not new) file at once.</li>
+</ul>
+</li>
+<li>
+<p>I fell from the train already +1 +1</p>
+<ul>
+<li>It's OK!  It is fast.  We are doing this for a recording and you can follow up later.</li>
+</ul>
+</li>
+<li>
+<p>Assuming I have VSCode installed. Is there a wiki page/youtube for setting up/linking my github with it. I have performed the exercise via the command line already but it will be good to know VScode as well especially since it serves as a good editor. Thanks. The instructions send from https://coderefinery.github.io/installation/ only sends to me to install github but not the getting started with GitHub, that's why I asked.</p>
+<ul>
+<li>We cover this in our install instructions some (that's about the extend I know, others can say more), but you can probably find much more online.</li>
+<li>Based on <a rel="noopener" target="_blank" href="https://code.visualstudio.com/docs/sourcecontrol/github#_authenticating-with-an-existing-repository">these docs</a>, I'd say that it should prompt login when you perform your first git actions that require logging in to GitHub</li>
+</ul>
+</li>
+<li>
+<p>When it came time to merge the another-recipe branch with the main branch, I was taken to a vi session with a file saying I had to add some comments. It was annoying b/c I am not comfortable with vi. Will this always happen with merge operations?</p>
+<ul>
+<li>If you set a different "git editor" it will open what you request.  I think we have a page on this in the install instructions.  It's good to update for what you need.</li>
+</ul>
+</li>
+<li>
+<p>I am already strugling with ssh. When I wrote Z:&gt;ssh -T git@github.com I got  git@github.com: Permission denied (publickey).</p>
+<ul>
+<li>It's OK.  You can resume at the next exercise and figure this out later.  We know this is the first place many problems start happening.</li>
+<li>did you write "Z:&gt;" before ssh -T git@github.com? Drop it :)</li>
+</ul>
+</li>
+<li>
+<p>How can i figure it out? I have no idea what to do :D</p>
+<ul>
+<li>This is just a demo, mainly for recording.  We will re-sync soon.</li>
+<li>I had the same problem, ssh was working yesterday, but today I had to configure it again by adding the key again to the ssh agent https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent and to my github account https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account</li>
+</ul>
+</li>
+<li>
+<p>Can we talk about what HEAD means, and how it relates to origin/HEAD, etc? In the branch list, it shows e.g. remotes/origin/HEAD, remotes/hummus-recipe versus remotes/alex/salad-recipe.</p>
+<ul>
+<li>HEAD tells you "where you are now", or perhaps more accurately it answers the question "if you were to create a commit now, which commit would be its parent?". origin/HEAD is a bit more hairy concept for me, kind of your local git's idea about where the new commits would be likely to appear in the remote repo? I'm hoping someone has a better answer to this.</li>
+</ul>
+</li>
+<li>
+<p>would it be possible to share commands before hand so that one can easily follow you are executing them? It is easy to get lost if you move eyes to another screen just for a second.</p>
+<ul>
+<li>Some of the commands are in the lesson from yesterday https://coderefinery.github.io/git-intro/commits/ under the command line tab. But as the focus was on GitHub yesterday, I understand it is difficult to follow.</li>
+</ul>
+</li>
+<li>
+<p>A very basic question: does changing the directory locally using 'cd' on the command line also change the branch?</p>
+<ul>
+<li>No - these are mostly unrelated</li>
+</ul>
+</li>
+<li>
+<p>OK but then I don't understand the connection between a local directory and the local clone</p>
+<ul>
+<li>The local clone is placed into a directory.  Git tracks internally (within that directory) what is the current branch and adjusts files to that branch, within that directory.</li>
+</ul>
+</li>
+<li>
+<p>I tried configuring git and all that, but when I'm trying to  git switch --create another-recipe main OR master, I have fatal errors in both cases fatal: invalid reference: master. Why this is?</p>
+<ul>
+<li>Hm.  Is it an existing repository that already has stuff in it?  If there are no commits yet, you might get this.  Your repo might only have <code>main</code> and not <code>master</code>, so only the first will work.</li>
+<li>If you are unusre which branches exist in the remote, you can get a list using <code>git branch --all</code>. Do you see <code>main</code> or <code>master</code>?</li>
+</ul>
+</li>
+<li>
+<p>Just to be sure. Does a commit only affect one file? Or can it affect multiple files?</p>
+<ul>
+<li>It can affect one or more files! You can <code>git add</code> multiple files if you want, but you can also just add one even if you have modified multiple files</li>
+<li>Very often, it should affect more files, if the changes in one file are related to changes in other files. (It is difficult, though, to change more files simultaneously from the github  web interface).</li>
+</ul>
+</li>
+</ol>
+<h2 id="inspecting-history">Inspecting history</h2>
+<p>https://coderefinery.github.io/git-intro/archaeology/</p>
+<ol start="30">
+<li>
+<p>I do not understand what the output from git grep is supposed to be. When I run it, it gives nothing</p>
+<ul>
+<li>You need to add an argument for <code>git grep</code>. In this exercise, <code>git grep "Logic error in degree_correlation"</code></li>
+<li>I did that. I gave it the .md file I had just created git gtrp "abc"</li>
+<li>try going with cd to the main recipe directory and searching for salt with: git grep salt</li>
+<li>Does the file you created  contain "abc"?</li>
+<li>For the exercise, work with the nextworkx repo, if you wish.</li>
+<li>Thank you! The file was indeed empty. I had thought it would also search for titles of files.</li>
+</ul>
+</li>
+<li>
+<p>what do stage and unstage do in VSC?</p>
+<ul>
+<li>Staging and unstaging mean the same thing whether you are using VSCode or plain command line. Staging a file (or some changes in a file) means that they will be included when you create a new commit with <code>git commit</code>. Anything not staged (or unstaged after initially staging if you realize that you didn't want to include some change after all) will not be included in the commit.</li>
+</ul>
+</li>
+<li>
+<p>Where did I get the individual commit hash again (for git show HASH) using either the web interface or command line?</p>
+<ul>
+<li>Using the web interface, vscode or the command line?
+<ul>
+<li>using the command line, typically you get a commit hash with <code>git log</code> (and other incarnations), or <code>git blame</code> (a less nicely named version of <code>git annotate</code>).</li>
+</ul>
+</li>
+<li>For the exercise, you may <code>git annotate &lt;file&gt;</code> where <code>&lt;file&gt;</code> should be replaced by the name of the file that contains "Logic...", so <code>git annotate networkx/algorithms/threshold.py</code>. Look for the line that contains "Logic error...". At the left of it you will see the hash of the commit that last modified that particular line.</li>
+</ul>
+</li>
+<li>
+<p>The latest commit hash looks like '90544b4fa5' for me and not '90544b4fa'</p>
+<ul>
+<li>Yes.</li>
+<li>They are equivalent. They are both, actually, truncations of a much larger commit hash (which is 32 character long), and typically all git commands for all intent and purposes accept truncated versions of hashes as long as they represent unambiguously a full hash (typically 6 or 7 characters are enough for this)</li>
+</ul>
+</li>
+<li>
+<p>A comment on bisect: I usually have tests, so I don't need it, BUT it happens from time to time that my tests take very long to run, so I do not run them for all the commits I do. In that case, I might run them only once in a while, and then, if an error is found, I use bisect to find the commit where I introduced the bug.</p>
+<ul>
+<li>Nice!</li>
+</ul>
+</li>
+<li>
+<p>How do run a specific commit. When i run bisect it tells me that it got to commit 251, how do i tell python that I want to run commit 251 to check whether that is the offending one? and then go back to bisect to see whether the error was introduced before?</p>
+<ul>
+<li>Git can switch to that commit by using various commands. For example, <code>git switch --create good-commit 251</code>, which will "switch" to that commit and also create a branch named 'good-commit' there. You can also use, if you do not want to create a branch, another command - <code>git checkout 251</code> - but it is a weird command.</li>
+<li>When I run <code>git switch --create bad-commit 251</code> it gives me <code>fatal: invalid reference: 251</code></li>
+<li>I got 251 from <code>git bisect bad master Bisecting: 250 revisions left to test after this (roughly 8 steps) [5c6fb09b319ae1f2e09933afce65e825d8c72c77] commit number 251</code>
+<ul>
+<li>I am assuming that <code>251</code> here is the beginning of a commit hash that you found at some point, for example with <code>git log -n 1</code> sorry no! <code>git log --oneline | tail -n 1</code> (this gives you the <em>first</em> commit in the history, while <code>git log -n 1</code> gives you only the most recent commit).</li>
+<li>Ah no, sorry! The commit "number" is irrelevant here. You need the commit <em>hash</em>. And that's the large number that starts with <code>f0ea9</code> (the other one <code>25b6</code> is the last, bad commit).</li>
+<li>Thank you</li>
+<li>Sorry for the confusion!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Is it considered bad practice to commit in-progress, untested changes instead of small, tested ones, when thinking about keeping past versions working?</p>
+<ul>
+<li>For bigger, more mature projects, it's probably not so good (but yo ucan commit to your development branch incomplete stuff and fix up later).  For small projects I do anything, I'm the only user and it's better to track incomplete stuff than not.</li>
+</ul>
+</li>
+<li>
+<p>In step (2) of the exercise, when I run git annotate networkx/algorithms/threshold.py, I get a lot of output in the command line and I don't know how to enter the next command. The "$ git" does not appear, only ":".</p>
+<ul>
+<li>To exit, press 'q' (this is the typical way to exit a <em>pager</em>, which is the little application that takes the git output and displays it in this case, without actually printing it as output in the command line)</li>
+<li>Thank you!</li>
+</ul>
+</li>
+<li>
+<p>How can I compare the graph locally and on GitHub by VSC?</p>
+<ul>
+<li>(I am answering but don't know VSC well enough, please correct my answer ...) To my knowledge you need an extension to see the graph locally in VSC. But alternative in VSC is always to open the terminal inside VSC and run "git graph" in there (which uses the alias/shortcut defined during the course).</li>
+<li>You need an extension, for example https://marketplace.visualstudio.com/items?itemName=mhutchie.git-graph</li>
+<li>There is a "GRAPH" window in the "Source Control" tab. If you refer to that, there is a similarity with what you see in the "Insights/Network" graph, but it has a different scale and the one on GitHub displays less information by default, and is more focused on displaying branches/pull requests between different repositories than the GRAPH widget on VSC, which is focused on displaying individual commits.</li>
+</ul>
+</li>
+<li>
+<p>What do we mean by remote branch? There is also something called origin in the VSC. Does it mean the original repository we cloned?</p>
+<ul>
+<li>Yes, origin is typically the original repository that was cloned. "The" remote branch is a branch on the remote repository that typically has the same name as "the" branch on the local repository (there are typically multiple branches both in the local and in the remote repository). Branches on different repositories that are "connected" in this way can be updated automatically with push/pull.</li>
+</ul>
+</li>
+<li>
+<p>Is there a way to see on the command window wich branches there are.</p>
+<ul>
+<li>In the terminal, you can type <code>git branch</code> and it will show the branch you are on.</li>
+<li>In order to see the remote branches as well, do <code>git branch --all</code></li>
+</ul>
+</li>
+<li>
+<p>what are we doing after lunch in todays workshop?</p>
+<ul>
+<li>From your own files that are not in git yet, make a repository and share it.   The "last step" before you can really use this yourself.</li>
+<li>Then a "practical advice / how much of what we teach do we actually do?"</li>
+<li>Thanks</li>
+</ul>
+</li>
+<li>
+<p>Anyone else had issues setting up VS code?</p>
+<ul>
+<li>Installing VSCode or making Git/GitHub work with it?</li>
+</ul>
+</li>
+<li>
+<p>These 2 links are some helpful videos (from the CodeRefinery youtube page) I used to set up Git and SHH keys on my local machine's command line.
+Git Configuration -- https://www.youtube.com/watch?v=WdDTp8NeHBs
+Setting up SSH keys -- https://www.youtube.com/watch?v=XCDg1mtaA5I</p>
+</li>
+<li>
+<p>What Extensions are recommended for visualization in VS Code? So far, I have been using  "GitLens" and "Compare Folders".</p>
+<ul>
+<li>Anyone use VS code know?  By default it can do the basics, so you don't technically need anything.</li>
+</ul>
+</li>
+<li>
+<p>Super Mario Brothers music??</p>
+<ul>
+<li>This is a theme song someone made a while ago for CodeRefinery</li>
+</ul>
+</li>
+</ol>
+<h2 id="turn-project-to-git-repo-and-share-it">Turn project to Git repo and share it</h2>
+<p>https://coderefinery.github.io/git-intro/sharing/</p>
+<ol start="46">
+<li>
+<p>Problem in command line version: remote: Support for password authentication was removed on August 13, 2021.</p>
+<ul>
+<li>In order to connect to github, one alternative approach is to use <code>ssh</code>  authentication.</li>
+<li>You need to use the "SSH" method, not "HTTPS".  Instructons talk about this (HTTPS can work with an authentication helper, but that's extra)</li>
+<li>In other words, When you clone the repository (in this case the <code>remote add origin</code> command), you need to choose 'ssh' instead of 'https'. This requires to have your ssh keys set up, though.</li>
+</ul>
+</li>
+<li>
+<p>Why do I need to manually create a repository on github instead of just pushing my new local repository directly?</p>
+<ul>
+<li>Because <code>git push</code> cannot automatically create a repository on GitHub for you. At least not yet, maybe they'll introduce it as a feature at some point.</li>
+<li>To be fair, there are some GitLab servers that allow exactly that - push your local repository, and a remote repository will be automatically created. But this is not the case for GitHub, as far as I know.
+<ul>
+<li>Cool!</li>
+</ul>
+</li>
+<li>GitHub does have its own CLI tool that can do this directly, it can be convenient sometimes. (But needs to be installed separately)
+<ul>
+<li>Thx for adding this.</li>
+</ul>
+</li>
+<li>The reasoning behind this not being possible might have something to do with the fact that if I could just e.g. <code>git remote add origin git@github.com/myuser/nonexistent-repo</code> and then start pushing, what should the repository's configuration be like: should it e.g. be public or private?
+<ul>
+<li>And also typos/misspellings could make unexpected things you might not realize for a while</li>
+</ul>
+</li>
+<li>GitLab documentation about this, documenting their approach: https://docs.gitlab.com/topics/git/project/ (just to feed this digression - sorry :-) )</li>
+</ul>
+</li>
+<li>
+<p>In command line, I get the following error message when I try to push my repository.</p>
+<ul>
+<li>fatal: 'origin' does not appear to be a git repository
+<ul>
+<li>It seems that you have not created and/or defined what the remote repository should be. If you <code>git remote --verbose</code>, you should be able to see soemthing like:</li>
+</ul>
+<pre data-lang="bash" style="background-color:#f5f5f5;color:#1f1f1f;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#5597d6;">origin</span><span>	git@github.com:mygithubusername/myproject.git (fetch)
+</span><span style="color:#5597d6;">origin</span><span>	git@github.com:mygithubusername/myproject.git (push)
+</span></code></pre>
+</li>
+<li>My bad, I forgot the command <code>git remote add origin</code> which initialy returned me an error. Now it works, thanks.
+<ul>
+<li>Great.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>How can I delete a repo locally? I would like to clone it again using ssh and not https.</p>
+<ul>
+<li>rm using the command line or in a file explorer</li>
+<li>You might need to use <code>rm -rf &lt;directory-containing-repository&gt;</code>, but be careful with this message! But you can also change the remote url using the command <code>git remote set-url origin &lt;the-ssh-url-instead-of-the-https-one&gt;</code>.
+<ul>
+<li>Thank you!</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After trying VSCode for this exercise, I feel like I may not go back to command line very often as VSCode makes life easier. What do you think of this? +1</p>
+<ul>
+<li>There are things that in VSCode are hard to do than on the command line. But true, VSCode (and also every other IDE) offers convenient shortcuts for the most basic workflows (my opinion)</li>
+</ul>
+</li>
+<li>
+<p>Why do I need to set <code>git branch -M main</code> before I push to the host? <code>-M</code> is supposed to rename a branch even if target exists, but I don't understand why it is necessary at this point.</p>
+<ul>
+<li>Was the name "master"? That's the default in old versions of git.
+<ul>
+<li>No I initialized with <code>git init -b main</code>, so it was <code>main</code></li>
+</ul>
+</li>
+<li>I bet it was to make sure everyone's branch is called <code>main</code> even if some previous steps were missed, so instructions would work for everyone. (if it's already called <code>main</code> then nothing happens).
+<ul>
+<li>That's what I thought, and that is why I was confused. :D Thanks for clarification.</li>
+<li>So, in your case, you did not really need to do that, but the folks having <code>master</code> as their default branch name would have needed that step.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>After moving a file to a newly created directory in my repo, it seems I may have lost any change tracking on that file. It shows only last commit after I moved it into the directory</p>
+<ul>
+<li>Actually, if the file is moved with relatively few changes, git can detect that it was moved and keep the history, by default. It is a little puzzling that you do not see its history. Have you checked with <code>git log &lt;name of the file&gt;</code>?</li>
+<li>This sometimes happen if you both move the file "normally" (e.g. rename in a file browser or <code>mv</code> from command line) and edit the file: then git might think that you removed one file and added a new one that just happens to resemble the old one. One way to avoid this is to do the <code>mv</code>, commit, and then edit. An even better option is to move/rename the file using <code>git mv</code>. That lets git know that despite the new name, it's still the same file, and git can preserve the history even if you edit it heavily while renaming.</li>
+</ul>
+</li>
+<li>
+<p>Hi, earlier i asked the question about the use of editor but did not undertood the response. I think someon has deleted the question now. Could you talk abou the editor, which editor you use/recommend?) I am referring to the editor where presenter was writing her code, in the session before lunch. I am not sure if editor is the right word for that...</p>
+<ul>
+<li>Are you referring to terminal based editors like vim or GNU or GUI based editors like VS Code?</li>
+<li>There are many editors one can use: VSCode is common, but also many that work from the command line.  Sometimes, <code>git</code> asks you to enter/edit something (like a commit message).  You can configure what editor pops up in those cases (it can be your main one, or a different one)</li>
+<li>You can set this.  Some of the editors need special config to work properly.</li>
+<li>It is really user dependent. I recommend an editor that people around you use, so you can easily ask for help. Since me and my group work a lot with python, I use pycharm, which also enables git control. For my thesis in LaTex I use VSCode. However, I prefer <code>git</code> in the command line, because that is, how I started. So you see: It really depends on what your preference is.</li>
+</ul>
+</li>
+<li>
+<p>Does the synchronize button in VSCode mean the same as push on the terminal?</p>
+<ul>
+<li>Yes.</li>
+</ul>
+</li>
+<li>
+<p>Can you explain the use of the label 'origin' in the repository structure?</p>
+<ul>
+<li>'origin' is the default name for the remote repository. If you clone a repository from, let's say, github, the repository on github becomes the "remote" called 'origin'. It is just a conventional name, one could use other names for remotes, and if by any chances more than one remote exist, the second one needs to have another name. Does this answer your question?</li>
+<li>Uh, sort of. I though I saw the label 'origin' in the repository names we worked with in the exercises locally. Maybe that was from the recipe book repositories cloned from GitHub?</li>
+</ul>
+</li>
+<li>
+<p>Also, when you go to GitHub to create the remote repository matching your local one, does the name have to be the same (as the directory on your local machine?</p>
+<ul>
+<li>no, it can be any. When you set up the local repository so that it connects to the remote one, you give it the remote url so that it can do it - and it does not have any constraint. Obviously, it reduces the cognitive load to use the same name for the same things everywhere.</li>
+</ul>
+</li>
+<li>
+<p>In Exercise, for VSCode path, we clicked "Publish to GitHub" in Source Control. Is it possible to get "Publish to GitLab" button there as well. I assume we need to install extension like GitLab Extension and some further set up?</p>
+<ul>
+<li>Both VSCode and GitHub are nowadays owned by Microsoft, thus they are so well connected. I don't use VSCode+GitLab myself, but based on quick googling it seems doable to get them working together reasonably nicely, see e.g. answers <a rel="noopener" target="_blank" href="https://stackoverflow.com/questions/53525536/gitlab-and-visual-studio-code">in this StackOverflow question</a>.</li>
+</ul>
+</li>
+<li>
+<p>Could you talk a bit about SSH keys, what they are and why/how to use them?</p>
+<ul>
+<li>ssh key(pair)s are a way to make sure that remote computers can identify you (or your computer) securely. A pair is composed by a private part and a public part, which are generated together by a program called <code>ssh-keygen</code>. The private part stays on your computer and should never be moved or published anywhere, while the public one can be given to any service/host that needs to identify you. This includes GitHub, GitLab servers, HPC systems and so on.</li>
+</ul>
+</li>
+<li>
+<p>Also, could you advise WSL user to be aware where they save their local repositories? I learned the hard way that you need to be mindful about saving inside or outside WSL folders 🥲</p>
+<ul>
+<li>If you use WSL, be sure to work inside its folders to improve git performance and avoid interpreters and dependencies conflicts (mostly for VS Code users). Another interesting tool is using Codespaces, inside GitHub, which makes a container for your project, thus giving you control over dependencies and resources you need.</li>
+</ul>
+</li>
+<li>
+<p>May I add here, few questions evolve around ssh-keygen. I think, the preferred method are now tokens, which you generate on the github page, and they can expire.</p>
+<ul>
+<li>tokens are like passwords, specific for the service that you generated it at. YOu can use instead ssh keys in different ways - A ssh key identifies your computer/user, while the token is specific to the service, in addition to the user.</li>
+</ul>
+</li>
+<li>
+<p>Can you give recommendations (advantages/disadvantages) for using python files vs. Jupyter Notebooks regarding vscode and github?</p>
+<ul>
+<li>python files can be kept under version control and managed/viewed easily. With jupyter notebooks some additional tooling is necessary, otherwise the diffs, for example, are basically unreadable.</li>
+</ul>
+</li>
+<li>
+<p>At the moment I see no disadvantage of using codium over vs code. Is there any?</p>
+<ul>
+<li>There might be some extensions that rely on the telemetry features of VSCode, but apart from that they should be completely identical and thus one could argue that VSCodium is nicer as it won't spy on you.
+<ul>
+<li>Thanks!</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<h2 id="practical-advice">Practical advice</h2>
+<p>https://coderefinery.github.io/git-intro/level/</p>
+<p>Don't know how to name your commit messages? https://www.conventionalcommits.org/en/v1.0.0/</p>
+<ul>
+<li>
+<p>What about git add/commit -p?</p>
+<ul>
+<li>it's a way to add/commit only a part of the code... (-p stands for --patch)</li>
+</ul>
+</li>
+<li>
+<p>But you also said you sometimes work with collaborators who don't use GitHub and you have to do version control yourself. That could include working with Word docs, PDF's coming from the collaborator, yes?</p>
+</li>
+<li>
+<p>can something be permanently removed from git history/github?</p>
+<ul>
+<li>let's start with permanently removing from git history: yes: for instance
+with an "interactive rebase" you can delete commits, re-order commits,
+squash commits, rename commits ...</li>
+<li>the same thing holds for git repos on github but note that public repos get automatically archived to services like https://www.softwareheritage.org/ so if I notice a big problem which has been in a public repo for a while and I remove it, you might still find it somewhere else on the internet</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>WSL = Windows Subsystem for Linux, not surfaces!</li>
+<li>When you run WSL you can find the files in a "Linux" section on your file explorer, with the characteristic Linux penguin as an icon. (If you don't want to find everything using command line). Also to get to your Windows files within wsl you can navigate to /mnt/C/ etc., easy to move and access files between WSL and Windows.</li>
+</ul>
+<h2 id="news-for-day-2-preparation-for-day-3">News for day 2 / preparation for day 3</h2>
+<ul>
+<li>We went over what was in the schedule.  We demonstrated some in command line and some in vscode, but both work for the future</li>
+<li>Tomorrow, we do "git collaborative", which is putting all of the stuff we have done today together.  It's both an extension and practice of today.</li>
+<li>Even if today was hard, come back tomorrow for another perspective</li>
+<li>If you are planning to do the collaboration exercise <strong>tomorrow</strong> and are
+<strong>not</strong> part of team, please open an issue
+at https://github.com/cr-workshop-exercises/access-requests/issues/new?template=access-request.md
+(you don't have to write or edit the text there, just click the green
+'Create' button).</li>
+</ul>
+<h2 id="feedback">Feedback</h2>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast:</li>
+<li>too slow: ooooooo</li>
+<li>right speed: oooooooo</li>
+<li>too slow sometimes, too fast other times: oooooo</li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: ooooooooooooooo</li>
+<li>I will use what I learned today: ooooooooooooooooo</li>
+<li>I would recommend today to others: ooooooooooooooooo</li>
+<li>I would not recommend today to others:</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>
+<p>It was good that we did similar tasks as the 1st day but locally so that we got deeper understanding.</p>
+</li>
+<li>
+<p>I liked getting some insights on more "advanced" git use cases like git bisect  +3</p>
+</li>
+<li>
+<p>Better stepwise guidance for the solution to git bisect, had to work backwards a little bit even with the solution. Step-by-step to revert the code directly to a branch with the last working commit might be good rather than an open-ended exploration.</p>
+</li>
+<li>
+<p>Great that I could follow the workshop even though I had another meeting today. Thanks for the flexible setup.</p>
+</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>too much time for creating git repository exercises, it was possible to just follow along with the demo so I think less time or having an optional additional exercise we could try during that time would be  great +3</li>
+<li>I think a bit more explanation on the ways of pushing to GitHub (HTTPS/SSH, the credential options, etc. would have been helpful)</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>I was a little lost on the git archeology exercise and was not able to solve it without solution in the terminal</li>
+</ul>
+<p>General questions continued:</p>
+<ul>
+<li>
+<p>how can we verify if we are part of the team for collaborative exercise? Is this confirmed on registration or do we have an extra step?</p>
+<ul>
+<li>If you have accepted the invitation, then you are part of the team. Check your mailbox associated with the github account.</li>
+</ul>
+</li>
+<li>
+<p>You talked today about things to do and not to do. This is very helpful.</p>
+</li>
+<li>
+<p>However, when I started to use git I e.g. used different folders for different branches and also modified files remotely on github and locally at the same time - without committing:(. Now, I see this is not the way you would use git. Still I am afraid that I forget to pull the right branch in the beginning of my work, or put similar files with different versions in different branches and branch merges are hard in the end.</p>
+</li>
+<li>
+<p>To sum up, maybe you could specify a typical working routine like e.g. if possible to avoid confusion:</p>
+</li>
+</ul>
+<ol>
+<li>Thing to do git pull the right branch</li>
+<li>change files and commit</li>
+<li>push everything in the evening</li>
+</ol>
+<ul>
+<li>
+<p>And also, would you recommend to change files only locally or only remotely on github to avoid confusions?</p>
+<ul>
+<li>Change wherever is convenient, just remember on the local repository to commit and push when a change is done and pull before working on new changes.</li>
+<li>I personally find it useful to do quick fixes (e.g. updating readme file) from the web interface. And more code-related work on the local computer.</li>
+</ul>
+</li>
+<li>
+<p>I would be interested in learning more about collaborating on code in a merge_request/new branch. Or if there are better options to collaborate.</p>
+<ul>
+<li>We will do this tomorrow.</li>
+</ul>
+</li>
+<li>
+<p>If you enjoying using Overleaf and git, you might find this useful. In today's CodeRefinery workshop, I accidentally found that Overleaf can work perfectly with git. You can clone the overleaf project to your local computer, and then make modification, and commit, push back to Overleaf. Then the content on the Overleaf website would update just like how Github does.  You can do whatever you like in your local repository, like creating branches, merging, etc.. Overleaf only stores your master brach. In this way one can do version control of your paper perfectly without losing all the advantages of Overleaf. Also you can still work while overleaf is down.</p>
+</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-03-25-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>

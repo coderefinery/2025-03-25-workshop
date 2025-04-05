@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Questions and notes from workshop day 5 - CodeRefinery workshop March 25-27 and April 1-3, 2025</title>
+    <link rel="shortcut icon" href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;/img/favicon.ico">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- uikit -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/css/uikit.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.23.4/dist/js/uikit-icons.min.js"></script>
+
+    <!-- time zone localization -->
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/dayjs.min.js" integrity="sha256-EfJOqCcshFS/2TxhArURu3Wn8b/XDA4fbPWKSwZ+1B8=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.7/plugin/utc.js" integrity="sha256-qDfIIxqpRhYWa543p6AHZ323xT3B8O6iLZFUAWtEQJw=" crossorigin="anonymous"></script>
+
+    
+      <link rel="alternate" type="application/atom+xml" title="CodeRefinery" href="https://coderefinery.github.io/2025-03-25-workshop/atom.xml" />
+    
+
+        
+      <title>CodeRefinery - Questions and notes from workshop day 5</title>
+      <meta name="twitter:title" content="Questions and notes from workshop day 5" />
+      <meta property="og:title" content="Questions and notes from workshop day 5" />
+      <meta property="og:site_name" content="CodeRefinery workshop March 25-27 and April 1-3, 2025" />
+    
+
+    
+      <meta name="description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta name="twitter:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+      <meta property="og:description" content="Free workshop on git, testing, documentation, and more in a workshop - for researchers and scientists." />
+    
+
+    
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+      <meta property="og:image" content="https://raw.githubusercontent.com/coderefinery/coderefinery-artwork/main/socialshare/socialshare-workshop.png" />
+    
+
+
+    
+
+    <link href="https://coderefinery.github.io/2025-03-25-workshop/style.css" rel="stylesheet">
+
+    
+    <script defer data-domain="coderefinery.github.io" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    
+
+
+  </head>
+
+  <body>
+    <div class="uk-container uk-margin-large-bottom">
+
+      <nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+  <div class="uk-navbar-right">
+    <ul class="uk-navbar-nav uk-visible@s">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+    <a href="#" class="uk-navbar-toggle uk-hidden@s" uk-navbar-toggle-icon uk-toggle="target: #sidenav"></a>
+  </div>
+</nav>
+
+<div id="sidenav" uk-offcanvas="flip: true" class="uk-offcanvas">
+  <div class="uk-offcanvas-bar">
+    <ul class="uk-nav">
+      
+      
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop">
+      About
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;exercises">
+      List of exercises
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;audience">
+      Audience
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;certificates">
+      Certificates
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;join">
+      How to join
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;requirements">
+      Requirements
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;questions">
+      Q&amp;A
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;code-of-conduct">
+      Code of conduct
+      
+    </a>
+
+    
+
+  </li>
+
+  <li>
+
+    
+    
+      
+        
+      
+    
+
+    
+
+    <a href="https:&#x2F;&#x2F;coderefinery.github.io&#x2F;2025-03-25-workshop&#x2F;communication">
+      Communication
+      
+    </a>
+
+    
+
+  </li>
+
+
+    </ul>
+  </div>
+</div>
+
+
+      <div class="markdown">
+        
+  <h1>Questions and notes from workshop day 5</h1>
+
+  <ul>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#icebreaker">Icebreaker</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#documentation">Documentation</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#motivation-and-wishlist">Motivation and wishlist</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#popular-tools-and-solutions">Popular tools and solutions</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#in-code-documentation">In-code documentation</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#writing-good-readme-files">Writing good README files</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#sphinx-and-markdown">Sphinx and markdown</a>
+      
+        <ul>
+          
+            <li>
+              <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#deploy-sphinx-documentation-to-github-pages">Deploy Sphinx documentation to GitHub Pages</a>
+              
+            </li>
+          
+        </ul>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#jupyter">Jupyter</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#motivation">Motivation</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#jupyterlab-and-notebook-interface">JupyterLab and notebook interface</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#a-first-computational-notebook">A first computational notebook</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#notebooks-and-version-control">Notebooks and version control</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#sharing-notebooks">Sharing notebooks</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#news-for-day-x-preparation-for-day-y">News for day X &#x2F; preparation for day Y</a>
+      
+    </li>
+  
+    <li>
+      <a href="https://coderefinery.github.io/2025-03-25-workshop/questions/day5/#feedback">Feedback</a>
+      
+    </li>
+  
+</ul>
+
+
+  
+  
+    <h2 id="icebreaker">Icebreaker</h2>
+<ul>
+<li>
+<p>What do you want to be when you "grow up"?</p>
+<ul>
+<li>veterinarian</li>
+<li>become a scientist</li>
+<li>Have cattle farms and milk products business</li>
+<li>I'll say a funny one: streamer (who streams teaching/mentoring kind of stuff)</li>
+<li>Baker (PhD to Bakery pipeline needs to be studied)</li>
+<li>Employed</li>
+<li>Retired and playing music and reading all the books I'm behind on</li>
+</ul>
+</li>
+<li>
+<p>How would you explain your current job to someone from the year 1700?</p>
+<ul>
+<li>I analyze fancy paintings that show different diseases and try to improve medical treatment</li>
+<li>Forcast the future</li>
+<li>We ask the same questions to many people and see if different people answer differently (that's psychometrics in one sentence :D)</li>
+<li>We try to make an assembly of bars and links walk like humans</li>
+<li>Solve the causes of dark miasma</li>
+<li>Provide machines that probably seem like magic to help the above people do those things</li>
+</ul>
+</li>
+<li>
+<p>What's the best documented project you have seen?</p>
+<ul>
+<li>Deal.II</li>
+<li>Numpy/scipy are pretty good overall.  Not fancy but somewhat reliable.</li>
+<li>Ardupilot (Not the best documented, but the scale of the repository is impressive)</li>
+<li>Klipper</li>
+<li>Matlab - absolutely not</li>
+<li>Tidyverse</li>
+<li>"Best" is doing some heavy lifting here... maybe Julia's Tables.jl?</li>
+</ul>
+</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<p>https://coderefinery.github.io/documentation/</p>
+<ul>
+<li>
+<p>Is project documentation important? Why?</p>
+<ul>
+<li>If you want anyone to use it... yes.</li>
+<li>If no one is going to use it (not even yourself?)... perhaps not?</li>
+<li>We forget things all the time, so it is important to document the steps.+1+1+1+1</li>
+<li>I need at least a bare minimal documentation (like a readme) otherwise I will just forget what I was doing and what each script does... (and as a shell user, at the end of the day I often do <code>history &gt; notes_for_dayDDMMYYYY.txt</code>)</li>
+<li>Is important how to understand the rationale behind  the decisions , including how you choose to structure your folders (for example)</li>
+<li>There are so many steps in the project that are stored only in your head initially. They must be written out once you step away from the project.</li>
+</ul>
+</li>
+<li>
+<p>How would you describe a useful documentation?</p>
+<ul>
+<li>A good documentation need to be self-consistent. It should be understandable just by reading.</li>
+<li>There is some balance/difference between "figure out new thing" and "I roughly know how it works. I need to scan and find info on one particular function quickly."  Different projects may specialize in one or the other</li>
+</ul>
+</li>
+<li>
+<p>How can you motivate your colleagues to contribute to the documentation?</p>
+<ul>
+<li>(I like how there are no answers here...) Maybe try to make them proud of the work?</li>
+<li>Learn to do a little bit at the right stages so that it doesn't seem like an artificial chore, and so that it minimizes the actual work (e.g. little comments when you start a script, or when you finish processing a data set).</li>
+<li>Get them to also use it when learning?</li>
+<li>Supervisor says it's important?</li>
+</ul>
+</li>
+<li>
+<p>How often do you write throw-away code?</p>
+<ul>
+<li>Daily shell scripts are the typical throw-away code for me at least.</li>
+<li>Depends how easy the code is, or if I am just testing and learning new stuff. But typically I right the steps on a journal when is related to the project, at least.</li>
+<li>Weekly</li>
+</ul>
+</li>
+</ul>
+<h2 id="motivation-and-wishlist">Motivation and wishlist</h2>
+<p>https://coderefinery.github.io/documentation/wishlist/</p>
+<p>Documentaiton wishlist:</p>
+<ul>
+<li>Some working examples how to embedd the functions described. Just the functions does not help me very often</li>
+<li>Have a table of contents (if long)</li>
+<li>Avoid as much as possible ambiguous terms (e.g.: naming processes/folders/functions in a clear manner) .</li>
+<li>template input</li>
+<li>Search bar for specific functions or utilities</li>
+<li>Easy to make (focus on what's important, don't do a lot of other extra work)</li>
+<li>Some simple examples to get started (how fast can I get started?)</li>
+<li>Installation guide (e.g. pip, conda,...)</li>
+<li>Also state the dependencies and versions</li>
+<li>Easy to generate the document, the tool is important. i am using markdown for the documentation now, but would like to know more tools.</li>
+<li>Good quick reference (if I want to find info on one function, can I do this quickly?  I don't want to have to read through lots of text.)</li>
+<li>how this relates to possible publications (eg. where they are part of the code)
+<ul>
+<li>Also if they have certain citation wishes, if the code is used</li>
+</ul>
+</li>
+<li>Description of all functions, their variables, output, purpose, with examples on usage and links to related functions</li>
+</ul>
+<p>Questions continue:</p>
+<h2 id="popular-tools-and-solutions">Popular tools and solutions</h2>
+<p>https://coderefinery.github.io/documentation/tools/</p>
+<ul>
+<li>What is difference between markdown and rST?
+<ul>
+<li>They are quite similar in principle.  Markdown is slightly more "easier HTML" and rST is slightly more "easier LaTeX" - but really, the base is exactly the same, the difference is only more advanced features.</li>
+<li>MyST that is just mentioned basically unifies them</li>
+</ul>
+</li>
+<li>But then how is markdown different from markup?
+<ul>
+<li>"markup" I think is just an abstract idea: way of labeling stuff.  Like "html markup"</li>
+<li>"markdown" is one exact implementation of marking up text.  (Well, a whole family of similar things)
+<ul>
+<li>Oh. Then the choice of name is confusing....</li>
+<li>yeah...</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="in-code-documentation">In-code documentation</h2>
+<p>https://coderefinery.github.io/documentation/in-code-documentation/
+(we do demos/Q&amp;A, no exercises)</p>
+<ul>
+<li>But sometimes your comments in a script are more like a narrative, or even writing for yourself as you code...
+<ul>
+<li>yes</li>
+<li>One funny thing a colleague once said is "in Python I don't need to have comments since the code says what it does".  Well yeah, every code theoreticalyl does that.  But narrative points/summaries/why things happen are still useful.</li>
+</ul>
+</li>
+<li>very helpful is to keep track of the unit (like degree celsius instead of just degree), because this can make a huge difference, if you forget at one point
+<ul>
+<li>this could be done by using a proper variable name (e.g., 'temperature_C' instead of 'temperature_F', for example), or if one wants to be fancy, use different types</li>
+<li>yes and no, C and F could also refer to different measurements or different thermometers. While the unit is the most likely explanation for C and F it does not have to be.</li>
+<li>Also I find long variable names helpful and hard to read at the same time, so it is a weird trade off</li>
+</ul>
+</li>
+</ul>
+<h2 id="writing-good-readme-files">Writing good README files</h2>
+<p>https://coderefinery.github.io/documentation/writing-readme-files/</p>
+<ul>
+<li>I'm adding [!IMPORTANT] to Github README.md but it doesn't render.... It just shows '[!IMPORTANT]'
+<ul>
+<li>Did you use the <code>&gt;</code> at the beginning of the line as well?
+<ul>
+<li>Oh, I see. Yes...</li>
+<li>Does this render in general markdown, or only GitHub?</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="sphinx-and-markdown">Sphinx and markdown</h2>
+<p>https://coderefinery.github.io/documentation/sphinx/</p>
+<ul>
+<li>Why do you name the directory '_build' with a dash?
+<ul>
+<li>It's just sort of a convention in Sphinx, but not required (can be changed in the build scripts).  Sort of keeps "automatic/meta stuff" separate from "source stuff"</li>
+</ul>
+</li>
+<li>I don't get where this sphinx directory is supposed to go relative to, say, a GitHub project directory or Python directory...
+<ul>
+<li>If this is part of another code project, we would often have it in docs/ sub-folder of the main git repo.  (docs/ is the place with all the sphinx files).</li>
+<li>If it's only a sphinx project we usualy have the sphinx files at the root of the repository.</li>
+</ul>
+</li>
+<li>Where is the unordered list? (Never mind, I didn't realize the sections were links)</li>
+<li>Will we go over the 'pin' appropriate sphinx version point made in the tutorial?
+<ul>
+<li>Where was this?  Is it about setting the version in the environment.yml / requirements.txt file/</li>
+</ul>
+</li>
+</ul>
+<h3 id="deploy-sphinx-documentation-to-github-pages">Deploy Sphinx documentation to GitHub Pages</h3>
+<p>https://coderefinery.github.io/documentation/gh_workflow/#exercise-deploy-sphinx-documentation-to-github-pages</p>
+<ul>
+<li>
+<p>I don't get where I am supposed to create the <code>.github/workflows/documentation.yml</code> file in the repository (from web interface).</p>
+<ul>
+<li>In the main directory of the repository (from the repository root, there is a directory <code>.github/workflows/</code>)</li>
+<li>Ah I see.  from... Try the <code>+</code> icon on the file view.  It should give an option "create new file"
+<ul>
+<li>Under Add File? Yes (my screen was narrower so it was a plus).</li>
+<li>So I created documentation.yml in the main directory of the repository. But when I go to https://github.com/USER/documentation-example/actions I am not sure what I should look for.</li>
+</ul>
+</li>
+<li>It should look like this: https://github.com/coderefinery/documentation/ (sorry for not being able to give more advice - ).  Except that the source isn't separated into a <code>content/</code> directory
+<ul>
+<li>Ok...</li>
+<li>I'll try more when I get back</li>
+<li>And the "Bring your own code" interactive session can also be a place to check this out together if you want to "debug it" live on zoom :) (no streaming in that case)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Are there limitations to being able to use this with private repositories?</p>
+<ul>
+<li>We think not (for in free repos)</li>
+<li>I am not sure if the question refers to GitHub actions or GitHub pages, but just a reminder about <a rel="noopener" target="_blank" href="https://docs.github.com/en/pages/getting-started-with-github-pages/about-github-pages#publishing-sources-for-github-pages-sites">this warning</a> from GitHub "GitHub Pages sites are publicly available on the internet, even if the repository for the site is private (if your plan or organization allows it). If you have sensitive data in your site's repository, you may want to remove the data before publishing. For more information, see About repositories." ...</li>
+<li>... so be careful that you do not accidentally publish some sensitive information (it shouldn't be stored in GitHub if it is truly sensitive)</li>
+</ul>
+</li>
+<li>
+<p>How can I easily see changes in Jupyter Notbooks or do I always have to covert them to .py files? Can you suggest a workflow here?</p>
+<ul>
+<li>We'll go over this in the next session!</li>
+</ul>
+</li>
+<li>
+<p>Sometime a Jupyter Notbook is to long to be shown on gitlab? What can I do?</p>
+<ul>
+<li>Hm.  My guess is that it is taking some time for the gitlab server to convert the .ipynb to .html.  This shouldn't be doing any serious computing, so I don't know what could slow it down.  My guess is server load/server resources</li>
+<li>Personal opinion: if a notebook is too long, it is time to split it into separate parts.</li>
+</ul>
+</li>
+<li>
+<p>I have started to work with marimo notbooks, do you have some experience to work with them on github? I think the reactive part helps a lot to avoid mistakes in the code. However, when I do version control on github I would prefer jupyter Notebooks, as single cells and cell outputs can be seen. Adding the marimo "app" code to github is a bit confusing because each app.cell is a function with returns. Do you have recommendations or workflow suggestions for using the benefits of the two worlds: Jupyter and marimo on github?</p>
+<ul>
+<li>I'm not very familiar with marimo and not sure if anyone here is.  We can look into it though.</li>
+</ul>
+</li>
+<li>
+<p>Can you please just share shortly the installation steps for jupyter lab? This is not accessbile at the moment (Conda environment for CodeRefinery workshops.).</p>
+<ul>
+<li>https://coderefinery.github.io/installation/conda/ I am able to access it now
+- Thank you!</li>
+</ul>
+</li>
+<li>
+<p>is the git connection in Jupyter lab similar to git in VScode?</p>
+</li>
+</ul>
+<h2 id="jupyter">Jupyter</h2>
+<p>https://coderefinery.github.io/jupyter/</p>
+<h2 id="motivation">Motivation</h2>
+<p>https://coderefinery.github.io/jupyter/motivation/</p>
+<h2 id="jupyterlab-and-notebook-interface">JupyterLab and notebook interface</h2>
+<p>https://coderefinery.github.io/jupyter/interface/</p>
+<h2 id="a-first-computational-notebook">A first computational notebook</h2>
+<p>https://coderefinery.github.io/jupyter/first-notebook/</p>
+<h2 id="notebooks-and-version-control">Notebooks and version control</h2>
+<p>https://coderefinery.github.io/jupyter/version-control/</p>
+<h2 id="sharing-notebooks">Sharing notebooks</h2>
+<p>https://coderefinery.github.io/jupyter/sharing/</p>
+<h2 id="news-for-day-x-preparation-for-day-y">News for day X / preparation for day Y</h2>
+<ul>
+<li>We covered the lessons as shown in the schedules.  All demos, you can do more later.</li>
+<li>Tomorrow we have: testing (practical, still a demo but has real exercises you can do later), and moduloar code development (this is a demo + discussion - you see ous go from Jupyter to a reusable program.  Very cool stuff.)</li>
+<li>Don't forget theo "bring your own code" sessions where you can get more help with your own work, or more Q&amp;A on the lesson topics.</li>
+</ul>
+<h2 id="feedback">Feedback</h2>
+<p>Today was (vote for all that apply):</p>
+<ul>
+<li>too fast: o</li>
+<li>too slow:</li>
+<li>right speed:</li>
+<li>too slow sometimes, too fast other times: oooooooo</li>
+<li>too advanced:</li>
+<li>too basic:</li>
+<li>right level: ooooo</li>
+<li>I will use what I learned today: ooooooo</li>
+<li>I would recommend today to others: oooo</li>
+<li>I would not recommend today to others: o</li>
+</ul>
+<p>One good thing about today:</p>
+<ul>
+<li>The multitude of tools commented +1+1</li>
+<li>I appreciated learning how to do documentation, as I usually focus more on the code and writing comments within the code</li>
+</ul>
+<p>One thing to improve for next time:</p>
+<ul>
+<li>I am missing some hands-on activity+1+1+1+1+1+1+1</li>
+</ul>
+<p>Any other feedback?</p>
+<ul>
+<li>Thanks for today! Very useful material and tips +1+1+1+1</li>
+</ul>
+
+  
+
+      </div>
+
+      <div class="uk-margin-large-top">
+        <hr>
+        <div class="uk-child-width-expand@s" uk-grid>
+
+  <div>
+    <h4>Funding</h4>
+    <p>
+      CodeRefinery is a project within the
+      <a href="https://neic.no" target="_blank">Nordic e-Infrastructure Collaboration</a> (NeIC).
+      NeIC is an organisational unit under <a href="https://www.nordforsk.org/" target="_blank">NordForsk</a>.
+    </p>
+  </div>
+
+  <div>
+    <h4>Privacy</h4>
+    <p>
+      <a href="https://coderefinery.org/privacy-policy/" target="_blank">Privacy policy</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Follow us</h4>
+    <ul class="uk-iconnav">
+      <li>
+        <a href="https://github.com/coderefinery" target="_blank" uk-icon="icon: github">GitHub</a>
+      </li>
+      <li>
+        <a rel="me" href="https://fosstodon.org/@coderefinery" target="_blank" uk-icon="icon: social">Mastodon</a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/coderefinery-research-software-development/?viewAsMember=true" target="_blank" uk-icon="icon: linkedin">LinkedIn</a>
+      </li>
+    </ul>
+  </div>
+
+  <div>
+    <h4>Contact</h4>
+    <p>
+      <a href="mailto:support@coderefinery.org">support@coderefinery.org</a>
+    </p>
+  </div>
+
+  <div>
+    <h4>Improve this page</h4>
+    <p>
+      <a href="https:&#x2F;&#x2F;github.com&#x2F;coderefinery&#x2F;2025-03-25-workshop">Source code</a>
+    </p>
+  </div>
+
+</div>
+
+      </div>
+
+    </div>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/anchor-js/anchor.min.js"></script>
+  <script>
+    anchors.add();
+  </script>
+</html>
